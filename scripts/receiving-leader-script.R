@@ -4,7 +4,7 @@ library(nflreadr)
 library(nflplotR)
 library(dplyr)
 library(magrittr)
-library(jsonlite) 
+library(jsonlite)
 
 options(scipen = 9999)
 
