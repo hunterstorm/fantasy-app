@@ -27,4 +27,3 @@ receiving_data <- data %>%
 json_data <- jsonlite::toJSON(receiving_data, pretty = TRUE)
 
 cat(json_data)
-

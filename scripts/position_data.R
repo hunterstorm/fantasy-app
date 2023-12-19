@@ -17,7 +17,7 @@ player_stats_2023 <- load_player_stats(2023)
 
 # Collect QB data #####
 
-QB_data_2023 <- player_stats_2023 %>%
+qb_data_2023 <- player_stats_2023 %>%
   filter(position == "QB") %>%
   select(
     player_id,
@@ -36,12 +36,14 @@ QB_data_2023 <- player_stats_2023 %>%
     fantasy_points_ppr
   )
 
-QB_data_2023_json <- jsonlite::toJSON(QB_data_2023, pretty = TRUE)         # convert to JSON
-## write(QB_data_2023_json, file = "QB_data_2023.json")                 # write JSON to file in wd
+qb_data_2023_json <-
+  jsonlite::toJSON(qb_data_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(qb_data_2023_json, file = "qb_data_2023.json")
 
 # Summarize QB data #####
 
-QB_leaders_2023 <- QB_data_2023 %>%
+qb_leaders_2023 <- qb_data_2023 %>%
   group_by(player_id, player_name, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
@@ -58,13 +60,15 @@ QB_leaders_2023 <- QB_data_2023 %>%
   ) %>%
   arrange(desc(total_ppr))
 
-QB_leaders_2023_json <- jsonlite::toJSON(QB_leaders_2023, pretty = TRUE)  # convert to JSON
-## write(QB_leaders_2023_json, file = "QB_leaders_2023.json")                   # write JSON to file in wd
+qb_leaders_2023_json <-
+  jsonlite::toJSON(qb_leaders_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(qb_leaders_2023_json, file = "qb_leaders_2023.json")
 
 
 # Collect WR data #####
 
-WR_data_2023 <- player_stats_2023 %>%
+wr_data_2023 <- player_stats_2023 %>%
   filter(position == "WR") %>%
   select(
     player_id,
@@ -82,12 +86,14 @@ WR_data_2023 <- player_stats_2023 %>%
     fantasy_points_ppr
   )
 
-WR_data_2023_json <- jsonlite::toJSON(WR_data_2023, pretty = TRUE)         # convert to JSON
-## write(WR_data_2023_json, file = "WR_data_2023.json")                 # write JSON to file in wd
+wr_data_2023_json <-
+  jsonlite::toJSON(wr_data_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(wr_data_2023_json, file = "wr_data_2023.json")
 
 # Summarize WR data #####
 
-WR_leaders_2023 <- WR_data_2023 %>%
+wr_leaders_2023 <- wr_data_2023 %>%
   group_by(player_id, player_name, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
@@ -101,12 +107,14 @@ WR_leaders_2023 <- WR_data_2023 %>%
   ) %>%
   arrange(desc(total_ppr))
 
-WR_leaders_2023_json <- jsonlite::toJSON(WR_leaders_2023, pretty = TRUE)  # convert to JSON
-## write(WR_leaders_2023_json, file = "WR_leaders_2023.json")                   # write JSON to file in wd
+wr_leaders_2023_json <-
+  jsonlite::toJSON(WR_leaders_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(WR_leaders_2023_json, file = "WR_leaders_2023.json")
 
 # Collect RB data #####
 
-RB_data_2023 <- player_stats_2023 %>%
+rb_data_2023 <- player_stats_2023 %>%
   filter(position == "RB") %>%
   select(
     player_id,
@@ -127,12 +135,14 @@ RB_data_2023 <- player_stats_2023 %>%
     fantasy_points_ppr
   )
 
-RB_data_2023_json <- jsonlite::toJSON(RB_data_2023, pretty = TRUE)         # convert to JSON
-## write(RB_data_2023_json, file = "RB_data_2023.json")                 # write JSON to file in wd
+rb_data_2023_json <-
+  jsonlite::toJSON(rb_data_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(rb_data_2023_json, file = "rb_data_2023.json")
 
 # Summarize RB data #####
 
-RB_leaders_2023 <- RB_data_2023 %>%
+rb_leaders_2023 <- rb_data_2023 %>%
   group_by(player_id, player_name, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
@@ -151,5 +161,7 @@ RB_leaders_2023 <- RB_data_2023 %>%
   ) %>%
   arrange(desc(total_ppr))
 
-RB_leaders_2023_json <- jsonlite::toJSON(RB_leaders_2023, pretty = TRUE)  # convert to JSON
-## write(RB_leaders_2023_json, file = "RB_leaders_2023.json")                   # write JSON to file in wd
+rb_leaders_2023_json <-
+  jsonlite::toJSON(rb_leaders_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(rb_leaders_2023_json, file = "rb_leaders_2023.json")
