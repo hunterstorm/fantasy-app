@@ -37,4 +37,9 @@ offense %>%
   ) +
   scale_y_reverse()
 
-ggsave(filename = file.path("graphics", "off_def_epa.jpeg"), device = "jpeg", width = 12, height = 7)
+ggsave(
+  filename = file.path("graphics", "off_def_epa.jpeg"),
+  device = "jpeg",
+  width = 12,
+  height = 7
+)
