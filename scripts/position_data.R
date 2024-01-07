@@ -1,5 +1,3 @@
-options(repos = c(CRAN = "https://cloud.r-project.org"))
-
 # Install and load required packages
 required_packages <- c("dplyr", "ggplot2", "ggrepel", "nflfastR", "nflplotR", "nflreadr", "tibble", "tidyr", "tidyverse", "jsonlite")
 
