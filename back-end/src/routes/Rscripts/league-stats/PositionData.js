@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const fs = require('fs/promises');
+const { execSync } = require('child_process');
 
 const scriptDirectory = path.join(__dirname, '../../../../../scripts');
 process.chdir(scriptDirectory);
@@ -10,6 +11,9 @@ const positions = [ 'qb_leaders_2023', 'wr_leaders_2023', 'rb_leaders_2023'];
 
 router.get('/', async (req, res) => {
     try {
+        const command = 'Rscript position_data.R'
+        const result = execSync(command, {encoding: 'utf-8'})
+
         const jsonData = {};
 
         // Load JSON data from files dynamically

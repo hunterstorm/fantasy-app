@@ -7,7 +7,7 @@ if (length(install_missing_packages) > 0) {
   install.packages(install_missing_packages)
 }
 
-json_folder <- "json-files/position-data"
+json_folder <- file.path(getwd(), "json-files", "position-data")
 
 if (!dir.exists(json_folder)) {
   dir.create(json_folder)
@@ -175,8 +175,8 @@ rb_leaders_2023 <- rb_data_2023 %>%
     total_rec = sum(receptions),
     total_rec_yds = sum(receiving_yards),
     total_rec_tds = sum(receiving_tds),
-    total_tds = sum(total_rush_tds + total_rec),
-    total_touches = (total_carries + total_rec_tds),
+    total_tds = sum(total_rush_tds + total_rec_tds),
+    total_touches = (total_carries + total_rec),
     avg_target_share = mean(target_share),
     avg_rush_epa = mean(rushing_epa),
     avg_rec_epa = mean(receiving_epa)

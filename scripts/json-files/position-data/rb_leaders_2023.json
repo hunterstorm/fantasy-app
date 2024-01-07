@@ -13,8 +13,8 @@
     "total_rec": 67,
     "total_rec_yds": 564,
     "total_rec_tds": 7,
-    "total_tds": 81,
-    "total_touches": 279,
+    "total_tds": 21,
+    "total_touches": 339,
     "avg_target_share": 0.1866,
     "avg_rush_epa": 0.8993,
     "avg_rec_epa": 0.4034
@@ -33,8 +33,8 @@
     "total_rec": 53,
     "total_rec_yds": 446,
     "total_rec_tds": 1,
-    "total_tds": 64,
-    "total_touches": 252,
+    "total_tds": 12,
+    "total_touches": 304,
     "avg_target_share": 0.1201,
     "avg_rush_epa": -2.1074,
     "avg_rec_epa": 0.6485
@@ -53,8 +53,8 @@
     "total_rec": 25,
     "total_rec_yds": 175,
     "total_rec_tds": 3,
-    "total_tds": 43,
-    "total_touches": 212,
+    "total_tds": 21,
+    "total_touches": 234,
     "avg_rush_epa": 1.1453
   },
   {
@@ -71,8 +71,8 @@
     "total_rec": 74,
     "total_rec_yds": 579,
     "total_rec_tds": 4,
-    "total_tds": 78,
-    "total_touches": 190,
+    "total_tds": 8,
+    "total_touches": 260,
     "avg_target_share": 0.1641,
     "avg_rush_epa": -1.2016,
     "avg_rec_epa": 0.3499
@@ -91,8 +91,8 @@
     "total_rec": 32,
     "total_rec_yds": 206,
     "total_rec_tds": 3,
-    "total_tds": 44,
-    "total_touches": 231,
+    "total_tds": 15,
+    "total_touches": 260,
     "avg_rush_epa": 1.8697
   },
   {
@@ -109,8 +109,8 @@
     "total_rec": 60,
     "total_rec_yds": 531,
     "total_rec_tds": 3,
-    "total_tds": 66,
-    "total_touches": 256,
+    "total_tds": 9,
+    "total_touches": 313,
     "avg_target_share": 0.1243,
     "avg_rush_epa": -2.7563,
     "avg_rec_epa": 1.4198
@@ -129,8 +129,8 @@
     "total_rec": 51,
     "total_rec_yds": 370,
     "total_rec_tds": 2,
-    "total_tds": 59,
-    "total_touches": 245,
+    "total_tds": 10,
+    "total_touches": 294,
     "avg_target_share": 0.1115,
     "avg_rush_epa": -1.3343,
     "avg_rec_epa": 0.1157
@@ -149,8 +149,8 @@
     "total_rec": 52,
     "total_rec_yds": 316,
     "total_rec_tds": 1,
-    "total_tds": 61,
-    "total_touches": 170,
+    "total_tds": 10,
+    "total_touches": 221,
     "avg_target_share": 0.1425,
     "avg_rush_epa": -0.229,
     "avg_rec_epa": -0.7663
@@ -169,8 +169,8 @@
     "total_rec": 75,
     "total_rec_yds": 466,
     "total_rec_tds": 1,
-    "total_tds": 80,
-    "total_touches": 181,
+    "total_tds": 6,
+    "total_touches": 255,
     "avg_target_share": 0.1854,
     "avg_rush_epa": -0.2419,
     "avg_rec_epa": 0.1768
@@ -189,8 +189,8 @@
     "total_rec": 28,
     "total_rec_yds": 214,
     "total_rec_tds": 0,
-    "total_tds": 39,
-    "total_touches": 261,
+    "total_tds": 11,
+    "total_touches": 289,
     "avg_rush_epa": -0.4748
   },
   {
@@ -207,8 +207,8 @@
     "total_rec": 41,
     "total_rec_yds": 429,
     "total_rec_tds": 4,
-    "total_tds": 43,
-    "total_touches": 228,
+    "total_tds": 6,
+    "total_touches": 265,
     "avg_rush_epa": -0.3168
   },
   {
@@ -225,8 +225,8 @@
     "total_rec": 51,
     "total_rec_yds": 384,
     "total_rec_tds": 3,
-    "total_tds": 55,
-    "total_touches": 206,
+    "total_tds": 7,
+    "total_touches": 254,
     "avg_rush_epa": -1.3913
   },
   {
@@ -243,8 +243,8 @@
     "total_rec": 44,
     "total_rec_yds": 244,
     "total_rec_tds": 2,
-    "total_tds": 51,
-    "total_touches": 207,
+    "total_tds": 9,
+    "total_touches": 249,
     "avg_target_share": 0.1021,
     "avg_rush_epa": -0.2691,
     "avg_rec_epa": 0.1301
@@ -263,8 +263,8 @@
     "total_rec": 42,
     "total_rec_yds": 293,
     "total_rec_tds": 5,
-    "total_tds": 46,
-    "total_touches": 206,
+    "total_tds": 9,
+    "total_touches": 243,
     "avg_rush_epa": -2.1964
   },
   {
@@ -281,8 +281,8 @@
     "total_rec": 53,
     "total_rec_yds": 295,
     "total_rec_tds": 0,
-    "total_tds": 58,
-    "total_touches": 235,
+    "total_tds": 5,
+    "total_touches": 288,
     "avg_rush_epa": -1.2034
   },
   {
@@ -299,8 +299,8 @@
     "total_rec": 39,
     "total_rec_yds": 229,
     "total_rec_tds": 4,
-    "total_tds": 43,
-    "total_touches": 233,
+    "total_tds": 8,
+    "total_touches": 268,
     "avg_target_share": 0.1746,
     "avg_rush_epa": -3.7218,
     "avg_rec_epa": -0.7667
@@ -319,8 +319,8 @@
     "total_rec": 39,
     "total_rec_yds": 214,
     "total_rec_tds": 1,
-    "total_tds": 44,
-    "total_touches": 230,
+    "total_tds": 6,
+    "total_touches": 268,
     "avg_rush_epa": 0.1196
   },
   {
@@ -337,9 +337,47 @@
     "total_rec": 16,
     "total_rec_yds": 117,
     "total_rec_tds": 0,
-    "total_tds": 28,
-    "total_touches": 209,
+    "total_tds": 12,
+    "total_touches": 225,
     "avg_rush_epa": 0.8688
+  },
+  {
+    "player_id": "00-0037228",
+    "player_name": "J.Warren",
+    "player_display_name": "Jaylen Warren",
+    "position": "RB",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q6zstqy99al3sghrufey",
+    "total_ppr": 196.4,
+    "total_carries": 149,
+    "total_rush_yds": 784,
+    "total_rush_tds": 4,
+    "total_targets": 74,
+    "total_rec": 61,
+    "total_rec_yds": 370,
+    "total_rec_tds": 0,
+    "total_tds": 4,
+    "total_touches": 210,
+    "avg_target_share": 0.1579,
+    "avg_rush_epa": -0.237,
+    "avg_rec_epa": -0.7902
+  },
+  {
+    "player_id": "00-0036893",
+    "player_name": "N.Harris",
+    "player_display_name": "Najee Harris",
+    "position": "RB",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hj3n6gjshilgmesahdxs",
+    "total_ppr": 195.5,
+    "total_carries": 255,
+    "total_rush_yds": 1035,
+    "total_rush_tds": 8,
+    "total_targets": 38,
+    "total_rec": 29,
+    "total_rec_yds": 170,
+    "total_rec_tds": 0,
+    "total_tds": 8,
+    "total_touches": 284,
+    "avg_rush_epa": -1.4674
   },
   {
     "player_id": "00-0038134",
@@ -355,29 +393,9 @@
     "total_rec": 28,
     "total_rec_yds": 256,
     "total_rec_tds": 1,
-    "total_tds": 36,
-    "total_touches": 203,
+    "total_tds": 9,
+    "total_touches": 230,
     "avg_rush_epa": -0.5341
-  },
-  {
-    "player_id": "00-0037228",
-    "player_name": "J.Warren",
-    "player_display_name": "Jaylen Warren",
-    "position": "RB",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q6zstqy99al3sghrufey",
-    "total_ppr": 188.4,
-    "total_carries": 140,
-    "total_rush_yds": 751,
-    "total_rush_tds": 4,
-    "total_targets": 69,
-    "total_rec": 56,
-    "total_rec_yds": 353,
-    "total_rec_tds": 0,
-    "total_tds": 60,
-    "total_touches": 140,
-    "avg_target_share": 0.1521,
-    "avg_rush_epa": -0.0743,
-    "avg_rec_epa": -0.5526
   },
   {
     "player_id": "00-0037746",
@@ -393,8 +411,8 @@
     "total_rec": 33,
     "total_rec_yds": 358,
     "total_rec_tds": 3,
-    "total_tds": 38,
-    "total_touches": 172,
+    "total_tds": 8,
+    "total_touches": 202,
     "avg_rush_epa": -1.1876
   },
   {
@@ -403,17 +421,17 @@
     "player_display_name": "Gus Edwards",
     "position": "RB",
     "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tvxpivjku1lbpf7tfafl",
-    "total_ppr": 184.2,
-    "total_carries": 188,
-    "total_rush_yds": 762,
+    "total_ppr": 187,
+    "total_carries": 198,
+    "total_rush_yds": 810,
     "total_rush_tds": 13,
     "total_targets": 13,
     "total_rec": 12,
     "total_rec_yds": 180,
     "total_rec_tds": 0,
-    "total_tds": 25,
-    "total_touches": 188,
-    "avg_rush_epa": -0.3883
+    "total_tds": 13,
+    "total_touches": 210,
+    "avg_rush_epa": -0.7546
   },
   {
     "player_id": "00-0035700",
@@ -429,8 +447,8 @@
     "total_rec": 37,
     "total_rec_yds": 296,
     "total_rec_tds": 0,
-    "total_tds": 43,
-    "total_touches": 233,
+    "total_tds": 6,
+    "total_touches": 270,
     "avg_rush_epa": -3.4092
   },
   {
@@ -447,8 +465,8 @@
     "total_rec": 26,
     "total_rec_yds": 192,
     "total_rec_tds": 3,
-    "total_tds": 33,
-    "total_touches": 96,
+    "total_tds": 10,
+    "total_touches": 119,
     "avg_target_share": 0.1158,
     "avg_rush_epa": 3.1521,
     "avg_rec_epa": 0.1425
@@ -467,8 +485,8 @@
     "total_rec": 44,
     "total_rec_yds": 398,
     "total_rec_tds": 1,
-    "total_tds": 49,
-    "total_touches": 170,
+    "total_tds": 6,
+    "total_touches": 213,
     "avg_target_share": 0.1448,
     "avg_rush_epa": -2.5263,
     "avg_rec_epa": -0.9939
@@ -487,27 +505,9 @@
     "total_rec": 37,
     "total_rec_yds": 224,
     "total_rec_tds": 0,
-    "total_tds": 42,
-    "total_touches": 215,
+    "total_tds": 5,
+    "total_touches": 252,
     "avg_rush_epa": -1.1064
-  },
-  {
-    "player_id": "00-0036893",
-    "player_name": "N.Harris",
-    "player_display_name": "Najee Harris",
-    "position": "RB",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hj3n6gjshilgmesahdxs",
-    "total_ppr": 171.2,
-    "total_carries": 229,
-    "total_rush_yds": 923,
-    "total_rush_tds": 7,
-    "total_targets": 33,
-    "total_rec": 24,
-    "total_rec_yds": 149,
-    "total_rec_tds": 0,
-    "total_tds": 31,
-    "total_touches": 229,
-    "avg_rush_epa": -1.6388
   },
   {
     "player_id": "00-0033553",
@@ -523,8 +523,8 @@
     "total_rec": 23,
     "total_rec_yds": 111,
     "total_rec_tds": 2,
-    "total_tds": 29,
-    "total_touches": 183,
+    "total_tds": 8,
+    "total_touches": 204,
     "avg_rush_epa": 0.9877
   },
   {
@@ -533,17 +533,34 @@
     "player_display_name": "Zack Moss",
     "position": "RB",
     "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ds6hvcx6s1vqihnaumm9",
-    "total_ppr": 166.6,
-    "total_carries": 177,
-    "total_rush_yds": 764,
+    "total_ppr": 169.6,
+    "total_carries": 183,
+    "total_rush_yds": 794,
     "total_rush_tds": 5,
     "total_targets": 37,
     "total_rec": 27,
     "total_rec_yds": 192,
     "total_rec_tds": 2,
-    "total_tds": 32,
-    "total_touches": 179,
-    "avg_rush_epa": -1.1187
+    "total_tds": 7,
+    "total_touches": 210,
+    "avg_rush_epa": -1.0022
+  },
+  {
+    "player_id": "00-0035250",
+    "player_name": "D.Singletary",
+    "player_display_name": "Devin Singletary",
+    "position": "RB",
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ulczhsxmhnyrsyjfrhd5",
+    "total_ppr": 167.34,
+    "total_carries": 216,
+    "total_rush_yds": 898,
+    "total_rush_tds": 4,
+    "total_targets": 38,
+    "total_rec": 30,
+    "total_rec_yds": 193,
+    "total_rec_tds": 0,
+    "total_tds": 4,
+    "total_touches": 246
   },
   {
     "player_id": "00-0033045",
@@ -559,8 +576,8 @@
     "total_rec": 46,
     "total_rec_yds": 286,
     "total_rec_tds": 2,
-    "total_tds": 49,
-    "total_touches": 173,
+    "total_tds": 5,
+    "total_touches": 217,
     "avg_rush_epa": -1.6216
   },
   {
@@ -577,26 +594,27 @@
     "total_rec": 40,
     "total_rec_yds": 185,
     "total_rec_tds": 2,
-    "total_tds": 42,
-    "total_touches": 210,
+    "total_tds": 4,
+    "total_touches": 248,
     "avg_rush_epa": -2.7171
   },
   {
-    "player_id": "00-0035250",
-    "player_name": "D.Singletary",
-    "player_display_name": "Devin Singletary",
+    "player_id": "00-0036223",
+    "player_name": "J.Taylor",
+    "player_display_name": "Jonathan Taylor",
     "position": "RB",
-    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ulczhsxmhnyrsyjfrhd5",
-    "total_ppr": 153.84,
-    "total_carries": 192,
-    "total_rush_yds": 835,
-    "total_rush_tds": 3,
-    "total_targets": 37,
-    "total_rec": 29,
-    "total_rec_yds": 191,
-    "total_rec_tds": 0,
-    "total_tds": 32,
-    "total_touches": 192
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xt7jhqpyb4may7k5kedb",
+    "total_ppr": 156.4,
+    "total_carries": 169,
+    "total_rush_yds": 741,
+    "total_rush_tds": 7,
+    "total_targets": 23,
+    "total_rec": 19,
+    "total_rec_yds": 153,
+    "total_rec_tds": 1,
+    "total_tds": 8,
+    "total_touches": 188,
+    "avg_rush_epa": -1.0159
   },
   {
     "player_id": "00-0036875",
@@ -612,8 +630,8 @@
     "total_rec": 38,
     "total_rec_yds": 238,
     "total_rec_tds": 0,
-    "total_tds": 42,
-    "total_touches": 156,
+    "total_tds": 4,
+    "total_touches": 194,
     "avg_target_share": 0.1293,
     "avg_rush_epa": -1.0712,
     "avg_rec_epa": -1.5014
@@ -632,8 +650,8 @@
     "total_rec": 49,
     "total_rec_yds": 344,
     "total_rec_tds": 0,
-    "total_tds": 50,
-    "total_touches": 97,
+    "total_tds": 1,
+    "total_touches": 146,
     "avg_target_share": 0.1448,
     "avg_rush_epa": -0.2244,
     "avg_rec_epa": -0.325
@@ -652,8 +670,8 @@
     "total_rec": 15,
     "total_rec_yds": 183,
     "total_rec_tds": 1,
-    "total_tds": 19,
-    "total_touches": 181,
+    "total_tds": 5,
+    "total_touches": 195,
     "avg_rush_epa": -1.2155
   },
   {
@@ -670,27 +688,9 @@
     "total_rec": 29,
     "total_rec_yds": 187,
     "total_rec_tds": 3,
-    "total_tds": 29,
-    "total_touches": 176,
+    "total_tds": 3,
+    "total_touches": 202,
     "avg_rush_epa": -2.0054
-  },
-  {
-    "player_id": "00-0036223",
-    "player_name": "J.Taylor",
-    "player_display_name": "Jonathan Taylor",
-    "position": "RB",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xt7jhqpyb4may7k5kedb",
-    "total_ppr": 128.8,
-    "total_carries": 139,
-    "total_rush_yds": 553,
-    "total_rush_tds": 6,
-    "total_targets": 21,
-    "total_rec": 17,
-    "total_rec_yds": 145,
-    "total_rec_tds": 1,
-    "total_tds": 23,
-    "total_touches": 140,
-    "avg_rush_epa": -1.3043
   },
   {
     "player_id": "00-0036328",
@@ -706,8 +706,8 @@
     "total_rec": 45,
     "total_rec_yds": 361,
     "total_rec_tds": 2,
-    "total_tds": 46,
-    "total_touches": 65,
+    "total_tds": 3,
+    "total_touches": 108,
     "avg_target_share": 0.1057,
     "avg_rec_epa": -0.0606
   },
@@ -725,8 +725,8 @@
     "total_rec": 22,
     "total_rec_yds": 223,
     "total_rec_tds": 0,
-    "total_tds": 24,
-    "total_touches": 178,
+    "total_tds": 2,
+    "total_touches": 200,
     "avg_rush_epa": -1.5664
   },
   {
@@ -743,8 +743,8 @@
     "total_rec": 14,
     "total_rec_yds": 79,
     "total_rec_tds": 0,
-    "total_tds": 23,
-    "total_touches": 135,
+    "total_tds": 9,
+    "total_touches": 149,
     "avg_rush_epa": -0.3531
   },
   {
@@ -761,8 +761,8 @@
     "total_rec": 25,
     "total_rec_yds": 203,
     "total_rec_tds": 1,
-    "total_tds": 27,
-    "total_touches": 121,
+    "total_tds": 3,
+    "total_touches": 145,
     "avg_target_share": 0.1199,
     "avg_rush_epa": 0.0563,
     "avg_rec_epa": 0.7999
@@ -781,10 +781,27 @@
     "total_rec": 47,
     "total_rec_yds": 432,
     "total_rec_tds": 0,
-    "total_tds": 48,
-    "total_touches": 50,
+    "total_tds": 1,
+    "total_touches": 97,
     "avg_target_share": 0.1164,
     "avg_rec_epa": 0.7929
+  },
+  {
+    "player_id": "00-0034975",
+    "player_name": "J.Hill",
+    "player_display_name": "Justice Hill",
+    "position": "RB",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v9xufmbbfauthnlpxcrc",
+    "total_ppr": 109.3,
+    "total_carries": 84,
+    "total_rush_yds": 387,
+    "total_rush_tds": 3,
+    "total_targets": 39,
+    "total_rec": 28,
+    "total_rec_yds": 206,
+    "total_rec_tds": 1,
+    "total_tds": 4,
+    "total_touches": 112
   },
   {
     "player_id": "00-0036906",
@@ -800,8 +817,8 @@
     "total_rec": 18,
     "total_rec_yds": 121,
     "total_rec_tds": 1,
-    "total_tds": 20,
-    "total_touches": 121,
+    "total_tds": 3,
+    "total_touches": 138,
     "avg_rush_epa": 0.1295
   },
   {
@@ -818,25 +835,8 @@
     "total_rec": 31,
     "total_rec_yds": 160,
     "total_rec_tds": 2,
-    "total_tds": 32,
-    "total_touches": 74
-  },
-  {
-    "player_id": "00-0034975",
-    "player_name": "J.Hill",
-    "player_display_name": "Justice Hill",
-    "position": "RB",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v9xufmbbfauthnlpxcrc",
-    "total_ppr": 103.7,
-    "total_carries": 84,
-    "total_rush_yds": 387,
-    "total_rush_tds": 3,
-    "total_targets": 29,
-    "total_rec": 25,
-    "total_rec_yds": 180,
-    "total_rec_tds": 1,
-    "total_tds": 28,
-    "total_touches": 85
+    "total_tds": 3,
+    "total_touches": 103
   },
   {
     "player_id": "00-0039021",
@@ -852,8 +852,8 @@
     "total_rec": 34,
     "total_rec_yds": 209,
     "total_rec_tds": 0,
-    "total_tds": 36,
-    "total_touches": 76,
+    "total_tds": 2,
+    "total_touches": 110,
     "avg_rush_epa": -0.4051
   },
   {
@@ -870,8 +870,8 @@
     "total_rec": 31,
     "total_rec_yds": 181,
     "total_rec_tds": 0,
-    "total_tds": 32,
-    "total_touches": 103,
+    "total_tds": 1,
+    "total_touches": 134,
     "avg_rush_epa": -0.5539
   },
   {
@@ -888,8 +888,8 @@
     "total_rec": 11,
     "total_rec_yds": 77,
     "total_rec_tds": 1,
-    "total_tds": 15,
-    "total_touches": 110,
+    "total_tds": 5,
+    "total_touches": 120,
     "avg_rush_epa": -0.4604
   },
   {
@@ -906,8 +906,8 @@
     "total_rec": 30,
     "total_rec_yds": 183,
     "total_rec_tds": 0,
-    "total_tds": 32,
-    "total_touches": 77,
+    "total_tds": 2,
+    "total_touches": 107,
     "avg_rush_epa": -1.0138
   },
   {
@@ -924,8 +924,8 @@
     "total_rec": 19,
     "total_rec_yds": 139,
     "total_rec_tds": 0,
-    "total_tds": 22,
-    "total_touches": 90
+    "total_tds": 3,
+    "total_touches": 109
   },
   {
     "player_id": "00-0035243",
@@ -941,8 +941,8 @@
     "total_rec": 27,
     "total_rec_yds": 154,
     "total_rec_tds": 0,
-    "total_tds": 28,
-    "total_touches": 126,
+    "total_tds": 1,
+    "total_touches": 153,
     "avg_rush_epa": -2.0385
   },
   {
@@ -959,8 +959,8 @@
     "total_rec": 25,
     "total_rec_yds": 192,
     "total_rec_tds": 4,
-    "total_tds": 26,
-    "total_touches": 25,
+    "total_tds": 5,
+    "total_touches": 46,
     "avg_target_share": 0.0721,
     "avg_rec_epa": 0.5986
   },
@@ -978,8 +978,8 @@
     "total_rec": 17,
     "total_rec_yds": 119,
     "total_rec_tds": 0,
-    "total_tds": 21,
-    "total_touches": 79,
+    "total_tds": 4,
+    "total_touches": 96,
     "avg_rush_epa": -0.1708
   },
   {
@@ -996,8 +996,8 @@
     "total_rec": 13,
     "total_rec_yds": 101,
     "total_rec_tds": 0,
-    "total_tds": 15,
-    "total_touches": 145,
+    "total_tds": 2,
+    "total_touches": 158,
     "avg_rush_epa": -3.1352
   },
   {
@@ -1014,8 +1014,8 @@
     "total_rec": 14,
     "total_rec_yds": 90,
     "total_rec_tds": 2,
-    "total_tds": 16,
-    "total_touches": 82,
+    "total_tds": 4,
+    "total_touches": 94,
     "avg_rush_epa": -0.3717
   },
   {
@@ -1032,8 +1032,8 @@
     "total_rec": 21,
     "total_rec_yds": 119,
     "total_rec_tds": 0,
-    "total_tds": 23,
-    "total_touches": 58
+    "total_tds": 2,
+    "total_touches": 79
   },
   {
     "player_id": "00-0038454",
@@ -1049,8 +1049,8 @@
     "total_rec": 9,
     "total_rec_yds": 93,
     "total_rec_tds": 0,
-    "total_tds": 11,
-    "total_touches": 47,
+    "total_tds": 2,
+    "total_touches": 56,
     "avg_target_share": 0.0573,
     "avg_rec_epa": 0.3702
   },
@@ -1068,8 +1068,8 @@
     "total_rec": 16,
     "total_rec_yds": 179,
     "total_rec_tds": 1,
-    "total_tds": 17,
-    "total_touches": 69,
+    "total_tds": 2,
+    "total_touches": 84,
     "avg_rush_epa": -0.9937
   },
   {
@@ -1086,8 +1086,8 @@
     "total_rec": 8,
     "total_rec_yds": 32,
     "total_rec_tds": 0,
-    "total_tds": 10,
-    "total_touches": 105,
+    "total_tds": 2,
+    "total_touches": 113,
     "avg_rush_epa": -1.5426
   },
   {
@@ -1104,8 +1104,8 @@
     "total_rec": 14,
     "total_rec_yds": 89,
     "total_rec_tds": 0,
-    "total_tds": 15,
-    "total_touches": 79,
+    "total_tds": 1,
+    "total_touches": 93,
     "avg_rush_epa": -1.2263
   },
   {
@@ -1122,8 +1122,8 @@
     "total_rec": 23,
     "total_rec_yds": 99,
     "total_rec_tds": 1,
-    "total_tds": 23,
-    "total_touches": 27
+    "total_tds": 1,
+    "total_touches": 49
   },
   {
     "player_id": "00-0033948",
@@ -1139,8 +1139,8 @@
     "total_rec": 15,
     "total_rec_yds": 54,
     "total_rec_tds": 0,
-    "total_tds": 15,
-    "total_touches": 92,
+    "total_tds": 0,
+    "total_touches": 107,
     "avg_rush_epa": -1.9357
   },
   {
@@ -1157,8 +1157,8 @@
     "total_rec": 13,
     "total_rec_yds": 146,
     "total_rec_tds": 1,
-    "total_tds": 13,
-    "total_touches": 34
+    "total_tds": 1,
+    "total_touches": 46
   },
   {
     "player_id": "00-0033308",
@@ -1174,8 +1174,8 @@
     "total_rec": 17,
     "total_rec_yds": 88,
     "total_rec_tds": 0,
-    "total_tds": 18,
-    "total_touches": 55
+    "total_tds": 1,
+    "total_touches": 72
   },
   {
     "player_id": "00-0036414",
@@ -1191,8 +1191,8 @@
     "total_rec": 11,
     "total_rec_yds": 70,
     "total_rec_tds": 0,
-    "total_tds": 13,
-    "total_touches": 60,
+    "total_tds": 2,
+    "total_touches": 71,
     "avg_rush_epa": -0.684
   },
   {
@@ -1227,8 +1227,8 @@
     "total_rec": 10,
     "total_rec_yds": 103,
     "total_rec_tds": 0,
-    "total_tds": 12,
-    "total_touches": 46,
+    "total_tds": 2,
+    "total_touches": 56,
     "avg_target_share": 0.1208,
     "avg_rush_epa": -2.9466,
     "avg_rec_epa": -0.2306
@@ -1247,8 +1247,8 @@
     "total_rec": 16,
     "total_rec_yds": 88,
     "total_rec_tds": 1,
-    "total_tds": 17,
-    "total_touches": 23,
+    "total_tds": 2,
+    "total_touches": 38,
     "avg_target_share": 0.0951,
     "avg_rush_epa": -0.0333,
     "avg_rec_epa": -1.4984
@@ -1267,8 +1267,8 @@
     "total_rec": 15,
     "total_rec_yds": 78,
     "total_rec_tds": 0,
-    "total_tds": 15,
-    "total_touches": 67,
+    "total_tds": 0,
+    "total_touches": 82,
     "avg_rush_epa": -1.7759
   },
   {
@@ -1285,8 +1285,8 @@
     "total_rec": 18,
     "total_rec_yds": 124,
     "total_rec_tds": 0,
-    "total_tds": 18,
-    "total_touches": 15,
+    "total_tds": 0,
+    "total_touches": 33,
     "avg_target_share": 0.0525,
     "avg_rec_epa": -0.9757
   },
@@ -1304,8 +1304,8 @@
     "total_rec": 2,
     "total_rec_yds": 19,
     "total_rec_tds": 0,
-    "total_tds": 5,
-    "total_touches": 34,
+    "total_tds": 3,
+    "total_touches": 36,
     "avg_rush_epa": 0.3226
   },
   {
@@ -1321,8 +1321,8 @@
     "total_rec": 2,
     "total_rec_yds": 12,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 51,
+    "total_tds": 2,
+    "total_touches": 53,
     "avg_rush_epa": -0.4355
   },
   {
@@ -1339,8 +1339,8 @@
     "total_rec": 14,
     "total_rec_yds": 85,
     "total_rec_tds": 0,
-    "total_tds": 14,
-    "total_touches": 32
+    "total_tds": 0,
+    "total_touches": 46
   },
   {
     "player_id": "00-0034681",
@@ -1356,8 +1356,8 @@
     "total_rec": 13,
     "total_rec_yds": 84,
     "total_rec_tds": 0,
-    "total_tds": 13,
-    "total_touches": 45,
+    "total_tds": 0,
+    "total_touches": 58,
     "avg_rush_epa": -0.6558
   },
   {
@@ -1374,8 +1374,8 @@
     "total_rec": 5,
     "total_rec_yds": 47,
     "total_rec_tds": 0,
-    "total_tds": 6,
-    "total_touches": 49,
+    "total_tds": 1,
+    "total_touches": 54,
     "avg_rush_epa": -0.7035
   },
   {
@@ -1392,8 +1392,8 @@
     "total_rec": 9,
     "total_rec_yds": 38,
     "total_rec_tds": 1,
-    "total_tds": 9,
-    "total_touches": 46
+    "total_tds": 1,
+    "total_touches": 54
   },
   {
     "player_id": "00-0035628",
@@ -1409,8 +1409,8 @@
     "total_rec": 10,
     "total_rec_yds": 140,
     "total_rec_tds": 0,
-    "total_tds": 10,
-    "total_touches": 40,
+    "total_tds": 0,
+    "total_touches": 50,
     "avg_rush_epa": -0.8579
   },
   {
@@ -1427,8 +1427,8 @@
     "total_rec": 4,
     "total_rec_yds": -1,
     "total_rec_tds": 0,
-    "total_tds": 5,
-    "total_touches": 61,
+    "total_tds": 1,
+    "total_touches": 65,
     "avg_rush_epa": -1.0557
   },
   {
@@ -1445,8 +1445,8 @@
     "total_rec": 7,
     "total_rec_yds": 37,
     "total_rec_tds": 0,
-    "total_tds": 9,
-    "total_touches": 26,
+    "total_tds": 2,
+    "total_touches": 33,
     "avg_rush_epa": 0.2813
   },
   {
@@ -1463,8 +1463,8 @@
     "total_rec": 5,
     "total_rec_yds": 47,
     "total_rec_tds": 0,
-    "total_tds": 6,
-    "total_touches": 41,
+    "total_tds": 1,
+    "total_touches": 46,
     "avg_rush_epa": -0.7466
   },
   {
@@ -1481,8 +1481,8 @@
     "total_rec": 6,
     "total_rec_yds": 53,
     "total_rec_tds": 1,
-    "total_tds": 6,
-    "total_touches": 30,
+    "total_tds": 1,
+    "total_touches": 35,
     "avg_rush_epa": -0.1471
   },
   {
@@ -1499,8 +1499,8 @@
     "total_rec": 11,
     "total_rec_yds": 49,
     "total_rec_tds": 0,
-    "total_tds": 11,
-    "total_touches": 32,
+    "total_tds": 0,
+    "total_touches": 43,
     "avg_rush_epa": -0.3305
   },
   {
@@ -1517,8 +1517,8 @@
     "total_rec": 7,
     "total_rec_yds": 49,
     "total_rec_tds": 0,
-    "total_tds": 8,
-    "total_touches": 32,
+    "total_tds": 1,
+    "total_touches": 39,
     "avg_rush_epa": 0.1006
   },
   {
@@ -1535,8 +1535,8 @@
     "total_rec": 9,
     "total_rec_yds": 111,
     "total_rec_tds": 0,
-    "total_tds": 9,
-    "total_touches": 28,
+    "total_tds": 0,
+    "total_touches": 37,
     "avg_target_share": 0.0542,
     "avg_rush_epa": -0.8103,
     "avg_rec_epa": 0.9738
@@ -1555,8 +1555,8 @@
     "total_rec": 1,
     "total_rec_yds": 6,
     "total_rec_tds": 0,
-    "total_tds": 3,
-    "total_touches": 47,
+    "total_tds": 2,
+    "total_touches": 48,
     "avg_rush_epa": -1.1506
   },
   {
@@ -1573,8 +1573,8 @@
     "total_rec": 4,
     "total_rec_yds": 21,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 28,
+    "total_tds": 0,
+    "total_touches": 32,
     "avg_rush_epa": 2.0568
   },
   {
@@ -1591,8 +1591,8 @@
     "total_rec": 3,
     "total_rec_yds": 13,
     "total_rec_tds": 0,
-    "total_tds": 3,
-    "total_touches": 35
+    "total_tds": 0,
+    "total_touches": 38
   },
   {
     "player_id": "00-0032144",
@@ -1600,17 +1600,17 @@
     "player_display_name": "Melvin Gordon",
     "position": "RB",
     "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i4g8x7yotpgszlyanow0",
-    "total_ppr": 19.9,
-    "total_carries": 19,
-    "total_rush_yds": 63,
+    "total_ppr": 19.7,
+    "total_carries": 26,
+    "total_rush_yds": 81,
     "total_rush_tds": 1,
     "total_targets": 3,
     "total_rec": 3,
     "total_rec_yds": 46,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 19,
-    "avg_rush_epa": -0.3332
+    "total_tds": 1,
+    "total_touches": 29,
+    "avg_rush_epa": -1.7776
   },
   {
     "player_id": "00-0037286",
@@ -1626,8 +1626,8 @@
     "total_rec": 2,
     "total_rec_yds": 54,
     "total_rec_tds": 0,
-    "total_tds": 3,
-    "total_touches": 13,
+    "total_tds": 1,
+    "total_touches": 15,
     "avg_rush_epa": -0.2187
   },
   {
@@ -1644,8 +1644,8 @@
     "total_rec": 2,
     "total_rec_yds": 16,
     "total_rec_tds": 0,
-    "total_tds": 3,
-    "total_touches": 23,
+    "total_tds": 1,
+    "total_touches": 25,
     "avg_rush_epa": 0.3624
   },
   {
@@ -1662,8 +1662,8 @@
     "total_rec": 6,
     "total_rec_yds": 34,
     "total_rec_tds": 0,
-    "total_tds": 6,
-    "total_touches": 37,
+    "total_tds": 0,
+    "total_touches": 43,
     "avg_rush_epa": -1.5957
   },
   {
@@ -1676,12 +1676,12 @@
     "total_carries": 13,
     "total_rush_yds": 87,
     "total_rush_tds": 0,
-    "total_targets": 7,
+    "total_targets": 9,
     "total_rec": 6,
     "total_rec_yds": 34,
     "total_rec_tds": 0,
-    "total_tds": 6,
-    "total_touches": 13
+    "total_tds": 0,
+    "total_touches": 19
   },
   {
     "player_id": "00-0038389",
@@ -1697,8 +1697,8 @@
     "total_rec": 7,
     "total_rec_yds": 43,
     "total_rec_tds": 0,
-    "total_tds": 7,
-    "total_touches": 19,
+    "total_tds": 0,
+    "total_touches": 26,
     "avg_rush_epa": -0.4983
   },
   {
@@ -1715,8 +1715,8 @@
     "total_rec": 4,
     "total_rec_yds": 52,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 17
+    "total_tds": 0,
+    "total_touches": 21
   },
   {
     "player_id": "00-0037429",
@@ -1732,8 +1732,8 @@
     "total_rec": 6,
     "total_rec_yds": 45,
     "total_rec_tds": 0,
-    "total_tds": 6,
-    "total_touches": 13
+    "total_tds": 0,
+    "total_touches": 19
   },
   {
     "player_id": "00-0035291",
@@ -1749,8 +1749,8 @@
     "total_rec": 7,
     "total_rec_yds": 10,
     "total_rec_tds": 0,
-    "total_tds": 7,
-    "total_touches": 14
+    "total_tds": 0,
+    "total_touches": 21
   },
   {
     "player_id": "00-0038622",
@@ -1766,8 +1766,8 @@
     "total_rec": 7,
     "total_rec_yds": 40,
     "total_rec_tds": 0,
-    "total_tds": 7,
-    "total_touches": 23,
+    "total_tds": 0,
+    "total_touches": 30,
     "avg_rush_epa": -2.1515
   },
   {
@@ -1784,8 +1784,8 @@
     "total_rec": 5,
     "total_rec_yds": 22,
     "total_rec_tds": 0,
-    "total_tds": 5,
-    "total_touches": 19
+    "total_tds": 0,
+    "total_touches": 24
   },
   {
     "player_id": "00-0038797",
@@ -1801,8 +1801,8 @@
     "total_rec": 4,
     "total_rec_yds": 23,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 14,
+    "total_tds": 0,
+    "total_touches": 18,
     "avg_rush_epa": 0.1129
   },
   {
@@ -1819,8 +1819,8 @@
     "total_rec": 4,
     "total_rec_yds": 26,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 35,
+    "total_tds": 0,
+    "total_touches": 39,
     "avg_rush_epa": -1.6167
   },
   {
@@ -1837,8 +1837,8 @@
     "total_rec": 7,
     "total_rec_yds": 40,
     "total_rec_tds": 0,
-    "total_tds": 7,
-    "total_touches": 5
+    "total_tds": 0,
+    "total_touches": 12
   },
   {
     "player_id": "00-0038738",
@@ -1853,8 +1853,8 @@
     "total_rec": 3,
     "total_rec_yds": 18,
     "total_rec_tds": 0,
-    "total_tds": 4,
-    "total_touches": 6
+    "total_tds": 1,
+    "total_touches": 9
   },
   {
     "player_id": "00-0036425",
@@ -1870,8 +1870,8 @@
     "total_rec": 6,
     "total_rec_yds": 26,
     "total_rec_tds": 0,
-    "total_tds": 6,
-    "total_touches": 10
+    "total_tds": 0,
+    "total_touches": 16
   },
   {
     "player_id": "00-0036158",
@@ -1887,8 +1887,8 @@
     "total_rec": 2,
     "total_rec_yds": 15,
     "total_rec_tds": 0,
-    "total_tds": 3,
-    "total_touches": 8,
+    "total_tds": 1,
+    "total_touches": 10,
     "avg_target_share": 0.1429,
     "avg_rush_epa": -1.8406,
     "avg_rec_epa": 0.5192
@@ -1907,8 +1907,8 @@
     "total_rec": 5,
     "total_rec_yds": 47,
     "total_rec_tds": 0,
-    "total_tds": 5,
-    "total_touches": 9,
+    "total_tds": 0,
+    "total_touches": 14,
     "avg_target_share": 0.0751,
     "avg_rush_epa": -1.2999,
     "avg_rec_epa": 0.6877
@@ -1961,8 +1961,8 @@
     "total_rec": 5,
     "total_rec_yds": 13,
     "total_rec_tds": 0,
-    "total_tds": 5,
-    "total_touches": 14
+    "total_tds": 0,
+    "total_touches": 19
   },
   {
     "player_id": "00-0030874",
@@ -1978,8 +1978,8 @@
     "total_rec": 2,
     "total_rec_yds": 12,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 11,
+    "total_tds": 0,
+    "total_touches": 13,
     "avg_rush_epa": -0.6361
   },
   {
@@ -1996,8 +1996,8 @@
     "total_rec": 2,
     "total_rec_yds": 18,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 8,
+    "total_tds": 0,
+    "total_touches": 10,
     "avg_rush_epa": -0.3341
   },
   {
@@ -2014,8 +2014,8 @@
     "total_rec": 2,
     "total_rec_yds": 2,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 24,
+    "total_tds": 0,
+    "total_touches": 26,
     "avg_rush_epa": -2.2274
   },
   {
@@ -2032,8 +2032,8 @@
     "total_rec": 2,
     "total_rec_yds": 9,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 15,
+    "total_tds": 0,
+    "total_touches": 17,
     "avg_rush_epa": -2.0697
   },
   {
@@ -2050,8 +2050,8 @@
     "total_rec": 3,
     "total_rec_yds": 12,
     "total_rec_tds": 0,
-    "total_tds": 3,
-    "total_touches": 1,
+    "total_tds": 0,
+    "total_touches": 4,
     "avg_target_share": 0.1154,
     "avg_rush_epa": 1.8488,
     "avg_rec_epa": 2.7992
@@ -2070,8 +2070,8 @@
     "total_rec": 5,
     "total_rec_yds": 14,
     "total_rec_tds": 0,
-    "total_tds": 5,
-    "total_touches": 14,
+    "total_tds": 0,
+    "total_touches": 19,
     "avg_rush_epa": -5.7216
   },
   {
@@ -2088,8 +2088,8 @@
     "total_rec": 2,
     "total_rec_yds": 13,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 4,
+    "total_tds": 0,
+    "total_touches": 6,
     "avg_target_share": 0.0513,
     "avg_rush_epa": -3.1968,
     "avg_rec_epa": 0.3764
@@ -2108,8 +2108,8 @@
     "total_rec": 1,
     "total_rec_yds": 5,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 5,
+    "total_tds": 0,
+    "total_touches": 6,
     "avg_rush_epa": -0.6299
   },
   {
@@ -2126,8 +2126,8 @@
     "total_rec": 1,
     "total_rec_yds": 12,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 2,
+    "total_tds": 0,
+    "total_touches": 3,
     "avg_target_share": 0.0256,
     "avg_rush_epa": -0.8839,
     "avg_rec_epa": 1.4138
@@ -2146,8 +2146,8 @@
     "total_rec": 2,
     "total_rec_yds": 31,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 2,
+    "total_tds": 0,
+    "total_touches": 4,
     "avg_rush_epa": -0.4517
   },
   {
@@ -2164,8 +2164,8 @@
     "total_rec": 2,
     "total_rec_yds": 11,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 0,
+    "total_tds": 0,
+    "total_touches": 2,
     "avg_target_share": 0.0444,
     "avg_rec_epa": 1.1931
   },
@@ -2183,8 +2183,8 @@
     "total_rec": 1,
     "total_rec_yds": 8,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 3
+    "total_tds": 0,
+    "total_touches": 4
   },
   {
     "player_id": "00-0035715",
@@ -2218,8 +2218,8 @@
     "total_rec": 2,
     "total_rec_yds": 3,
     "total_rec_tds": 0,
-    "total_tds": 2,
-    "total_touches": 0,
+    "total_tds": 0,
+    "total_touches": 2,
     "avg_target_share": 0.0217,
     "avg_rec_epa": -0.3027
   },
@@ -2237,8 +2237,8 @@
     "total_rec": 1,
     "total_rec_yds": 8,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 3,
+    "total_tds": 0,
+    "total_touches": 4,
     "avg_target_share": 0.0244,
     "avg_rush_epa": -1.6084,
     "avg_rec_epa": 0.5565
@@ -2257,8 +2257,8 @@
     "total_rec": 1,
     "total_rec_yds": -1,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 2,
+    "total_tds": 0,
+    "total_touches": 3,
     "avg_target_share": 0.0323,
     "avg_rush_epa": -0.6515,
     "avg_rec_epa": -1.3476
@@ -2313,8 +2313,8 @@
     "total_rec": 1,
     "total_rec_yds": 6,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 1,
+    "total_tds": 0,
+    "total_touches": 2,
     "avg_target_share": 0.0256,
     "avg_rush_epa": -1.487,
     "avg_rec_epa": -0.1081
@@ -2387,8 +2387,8 @@
     "total_rec": 1,
     "total_rec_yds": -2,
     "total_rec_tds": 0,
-    "total_tds": 1,
-    "total_touches": 1,
+    "total_tds": 0,
+    "total_touches": 2,
     "avg_target_share": 0.0286,
     "avg_rush_epa": -0.4817,
     "avg_rec_epa": -1.1249
