@@ -1,3 +1,21 @@
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+
+# Install and load required packages
+required_packages <- c("dplyr", "ggplot2", "ggrepel", "nflfastR", "nflplotR", "nflreadr", "tibble", "tidyr", "tidyverse", "jsonlite")
+
+# Install missing packages
+install_missing_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
+if (length(install_missing_packages) > 0) {
+  install.packages(install_missing_packages)
+}
+
+json_folder <- "JSONFiles/PositionData"
+
+if (!dir.exists(json_folder)) {
+  dir.create(json_folder)
+}
+
+
 # Load packages #####
 
 library(dplyr)
@@ -22,6 +40,8 @@ qb_data_2023 <- player_stats_2023 %>%
   select(
     player_id,
     player_name,
+    player_display_name,
+    position,
     headshot_url,
     recent_team,
     week,
@@ -44,7 +64,7 @@ qb_data_2023_json <-
 # Summarize QB data #####
 
 qb_leaders_2023 <- qb_data_2023 %>%
-  group_by(player_id, player_name, headshot_url) %>%
+  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_pass_yds = sum(passing_yards),
@@ -63,7 +83,7 @@ qb_leaders_2023 <- qb_data_2023 %>%
 qb_leaders_2023_json <-
   jsonlite::toJSON(qb_leaders_2023, pretty = TRUE) # convert to JSON
 # write JSON to file in wd
-# write(qb_leaders_2023_json, file = "qb_leaders_2023.json")
+write(qb_leaders_2023_json, file.path(json_folder, "qb_leaders_2023.json"))
 
 
 # Collect WR data #####
@@ -73,6 +93,8 @@ wr_data_2023 <- player_stats_2023 %>%
   select(
     player_id,
     player_name,
+    player_display_name,
+    position,
     headshot_url,
     recent_team,
     week,
@@ -94,7 +116,7 @@ wr_data_2023_json <-
 # Summarize WR data #####
 
 wr_leaders_2023 <- wr_data_2023 %>%
-  group_by(player_id, player_name, headshot_url) %>%
+  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_targets = sum(targets),
@@ -108,9 +130,9 @@ wr_leaders_2023 <- wr_data_2023 %>%
   arrange(desc(total_ppr))
 
 wr_leaders_2023_json <-
-  jsonlite::toJSON(WR_leaders_2023, pretty = TRUE) # convert to JSON
+  jsonlite::toJSON(wr_leaders_2023, pretty = TRUE) # convert to JSON
 # write JSON to file in wd
-# write(WR_leaders_2023_json, file = "WR_leaders_2023.json")
+write(wr_leaders_2023_json, file.path(json_folder, "wr_leaders_2023.json"))
 
 # Collect RB data #####
 
@@ -119,6 +141,8 @@ rb_data_2023 <- player_stats_2023 %>%
   select(
     player_id,
     player_name,
+    player_display_name,
+    position,
     headshot_url,
     recent_team,
     week,
@@ -143,7 +167,7 @@ rb_data_2023_json <-
 # Summarize RB data #####
 
 rb_leaders_2023 <- rb_data_2023 %>%
-  group_by(player_id, player_name, headshot_url) %>%
+  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_carries = sum(carries),
@@ -164,4 +188,4 @@ rb_leaders_2023 <- rb_data_2023 %>%
 rb_leaders_2023_json <-
   jsonlite::toJSON(rb_leaders_2023, pretty = TRUE) # convert to JSON
 # write JSON to file in wd
-# write(rb_leaders_2023_json, file = "rb_leaders_2023.json")
+write(rb_leaders_2023_json, file.path(json_folder, "rb_leaders_2023.json"))
