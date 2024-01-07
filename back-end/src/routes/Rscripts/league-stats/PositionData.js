@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const { execSync } = require('child_process');
 const fs = require('fs/promises');
 
 const scriptDirectory = path.join(__dirname, '../../../../../scripts');
