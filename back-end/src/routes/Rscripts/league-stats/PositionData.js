@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 
         // Load JSON data from files dynamically
         for (const position of positions) {
-            const filePath = `JSONFiles/PositionData/${position}.json`;
+            const filePath = `json-files/position-data/${position}.json`;
             const fileContent = await fs.readFile(filePath, 'utf-8');
             jsonData[position] = JSON.parse(fileContent);
         }

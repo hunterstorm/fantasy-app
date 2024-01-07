@@ -9,7 +9,7 @@ if (length(install_missing_packages) > 0) {
   install.packages(install_missing_packages)
 }
 
-json_folder <- "JSONFiles/PositionData"
+json_folder <- "json-files/position-data"
 
 if (!dir.exists(json_folder)) {
   dir.create(json_folder)
