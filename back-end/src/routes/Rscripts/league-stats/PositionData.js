@@ -13,10 +13,6 @@ router.get('/', async (req, res) => {
     try {
         const jsonData = {};
 
-        // Run R script to generate JSON files
-        const command = 'Rscript position_data.R';
-        const result = execSync(command, { encoding: 'utf-8' });
-
         // Load JSON data from files dynamically
         for (const position of positions) {
             const filePath = `json-files/position-data/${position}.json`;
