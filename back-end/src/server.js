@@ -19,14 +19,16 @@ const ip = config.SERVER_IP
 const apiAuth = require('./routes/security/apiAuth')
 const ReceivingLeadersRoute = require('./routes/Rscripts/league-stats/ReceivingLeaders');
 const PositionDataRoute = require('./routes/Rscripts/league-stats/PositionData');
+const OffDefEPARoute = require('./routes/Rscripts/league-stats/OffDefEPA');
 
 //middleware
 app.use(cors());
 app.use(apiAuth);
 
 //Rscript routes
-app.use('/ReceivingLeaders', ReceivingLeadersRoute)
-app.use('/PositionData', PositionDataRoute)
+app.use('/ReceivingLeaders', ReceivingLeadersRoute);
+app.use('/PositionData', PositionDataRoute);
+app.use('/OffDefEPA', OffDefEPARoute);
 
 const server = http.createServer(app);
 server.listen(port,ip, ()=>{
