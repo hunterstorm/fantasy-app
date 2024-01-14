@@ -13,7 +13,6 @@ if (!dir.exists(json_folder)) {
   dir.create(json_folder)
 }
 
-
 # Load packages #####
 
 library(dplyr)
@@ -82,7 +81,6 @@ qb_leaders_2023_json <-
   jsonlite::toJSON(qb_leaders_2023, pretty = TRUE) # convert to JSON
 # write JSON to file in wd
 write(qb_leaders_2023_json, file.path(json_folder, "qb_leaders_2023.json"))
-
 
 # Collect WR data #####
 
@@ -187,3 +185,51 @@ rb_leaders_2023_json <-
   jsonlite::toJSON(rb_leaders_2023, pretty = TRUE) # convert to JSON
 # write JSON to file in wd
 write(rb_leaders_2023_json, file.path(json_folder, "rb_leaders_2023.json"))
+
+# Collect TE data #####
+
+te_data_2023 <- player_stats_2023 %>%
+  filter(position == "TE") %>%
+  select(
+    player_id,
+    player_name,
+    player_display_name,
+    position,
+    headshot_url,
+    recent_team,
+    week,
+    targets,
+    receptions,
+    receiving_yards,
+    receiving_yards_after_catch,
+    receiving_tds,
+    target_share,
+    receiving_epa,
+    fantasy_points_ppr
+  )
+
+te_data_2023_json <-
+  jsonlite::toJSON(te_data_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+# write(te_data_2023_json, file = "te_data_2023.json")
+
+# Summarize TE data #####
+
+te_leaders_2023 <- te_data_2023 %>%
+  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
+  summarize(
+    total_ppr = sum(fantasy_points_ppr),
+    total_targets = sum(targets),
+    avg_target_share = mean(target_share),
+    total_rec = sum(receptions),
+    total_rec_yards = sum(receiving_yards),
+    total_yac = sum(receiving_yards_after_catch),
+    total_rec_tds = sum(receiving_tds),
+    avg_rec_epa = mean(receiving_epa)
+  ) %>%
+  arrange(desc(total_ppr))
+
+te_leaders_2023_json <-
+  jsonlite::toJSON(te_leaders_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+write(te_leaders_2023_json, file.path(json_folder, "te_leaders_2023.json"))
