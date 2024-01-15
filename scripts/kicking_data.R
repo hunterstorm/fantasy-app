@@ -77,7 +77,13 @@ k_leaders_2023 <- k_data_2023 %>%
     fg_pct = ((total_fg_made / total_fg_att) * 100),
     avg_make_yds = (sum(fg_made_distance, na.rm = TRUE) / total_fg_made),
     avg_miss_yds = (sum(fg_missed_distance, na.rm = TRUE) / total_fg_missed),
-    total_pat_att = (sum(pat_made, na.rm = TRUE) + sum(pat_missed, na.rm = TRUE)),
+    total_pat_att = (sum(pat_made, na.rm = TRUE)
+                     + sum(pat_missed, na.rm = TRUE)),
     total_pat_missed = sum(pat_missed, na.rm = TRUE)
   ) %>%
   arrange(desc(total_ppr))
+
+k_leaders_2023_json <-
+  jsonlite::toJSON(k_leaders_2023, pretty = TRUE) # convert to JSON
+# write JSON to file in wd
+write(k_leaders_2023_json, file.path(json_folder, "k_leaders_2023.json"))
