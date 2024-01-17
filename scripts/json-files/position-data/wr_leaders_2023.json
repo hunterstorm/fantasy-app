@@ -60,6 +60,21 @@
     "avg_rec_epa": 4.5785
   },
   {
+    "player_id": "00-0031408",
+    "player_name": "M.Evans",
+    "player_display_name": "Mike Evans",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w6eq27k2xs8vawwgkzbl",
+    "total_ppr": 290.3,
+    "total_targets": 143,
+    "avg_target_share": 0.249,
+    "total_rec": 82,
+    "total_rec_yards": 1303,
+    "total_yac": 330,
+    "total_rec_tds": 13,
+    "avg_rec_epa": 3.0496
+  },
+  {
     "player_id": "00-0035676",
     "player_name": "A.Brown",
     "player_display_name": "A.J. Brown",
@@ -90,19 +105,19 @@
     "avg_rec_epa": 3.8931
   },
   {
-    "player_id": "00-0031408",
-    "player_name": "M.Evans",
-    "player_display_name": "Mike Evans",
+    "player_id": "00-0031588",
+    "player_name": "S.Diggs",
+    "player_display_name": "Stefon Diggs",
     "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w6eq27k2xs8vawwgkzbl",
-    "total_ppr": 282.5,
-    "total_targets": 136,
-    "avg_target_share": 0.2519,
-    "total_rec": 79,
-    "total_rec_yards": 1255,
-    "total_yac": 322,
-    "total_rec_tds": 13,
-    "avg_rec_epa": 3.2374
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zf6nbnzcfzu4y7yq2nzk",
+    "total_ppr": 286,
+    "total_targets": 169,
+    "avg_target_share": 0.3007,
+    "total_rec": 114,
+    "total_rec_yards": 1235,
+    "total_yac": 431,
+    "total_rec_tds": 8,
+    "avg_rec_epa": 2.3107
   },
   {
     "player_id": "00-0036554",
@@ -133,21 +148,6 @@
     "total_yac": 396,
     "total_rec_tds": 7,
     "avg_rec_epa": 4.6795
-  },
-  {
-    "player_id": "00-0031588",
-    "player_name": "S.Diggs",
-    "player_display_name": "Stefon Diggs",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zf6nbnzcfzu4y7yq2nzk",
-    "total_ppr": 273.8,
-    "total_targets": 160,
-    "avg_target_share": 0.3007,
-    "total_rec": 107,
-    "total_rec_yards": 1183,
-    "total_yac": 399,
-    "total_rec_tds": 8,
-    "avg_rec_epa": 2.2489
   },
   {
     "player_id": "00-0031381",
@@ -193,6 +193,21 @@
     "total_yac": 513,
     "total_rec_tds": 4,
     "avg_rec_epa": 1.624
+  },
+  {
+    "player_id": "00-0036912",
+    "player_name": "D.Smith",
+    "player_display_name": "DeVonta Smith",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/f8nowzare3wd2qw4jx7d",
+    "total_ppr": 250.4,
+    "total_targets": 124,
+    "avg_target_share": 0.2391,
+    "total_rec": 89,
+    "total_rec_yards": 1214,
+    "total_yac": 337,
+    "total_rec_tds": 7,
+    "avg_rec_epa": 2.3056
   },
   {
     "player_id": "00-0036261",
@@ -298,21 +313,6 @@
     "avg_rec_epa": 1.8428
   },
   {
-    "player_id": "00-0036912",
-    "player_name": "D.Smith",
-    "player_display_name": "DeVonta Smith",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/f8nowzare3wd2qw4jx7d",
-    "total_ppr": 227.6,
-    "total_targets": 112,
-    "avg_target_share": 0.2306,
-    "total_rec": 81,
-    "total_rec_yards": 1066,
-    "total_yac": 294,
-    "total_rec_tds": 7,
-    "avg_rec_epa": 2.1855
-  },
-  {
     "player_id": "00-0035640",
     "player_name": "D.Metcalf",
     "player_display_name": "DK Metcalf",
@@ -326,6 +326,21 @@
     "total_yac": 367,
     "total_rec_tds": 8,
     "avg_rec_epa": 2.6653
+  },
+  {
+    "player_id": "00-0033921",
+    "player_name": "C.Godwin",
+    "player_display_name": "Chris Godwin",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfdampf12giyojipbcxl",
+    "total_ppr": 223.7,
+    "total_targets": 135,
+    "avg_target_share": 0.2339,
+    "total_rec": 87,
+    "total_rec_yards": 1069,
+    "total_yac": 390,
+    "total_rec_tds": 3,
+    "avg_rec_epa": 2.7301
   },
   {
     "player_id": "00-0030564",
@@ -373,6 +388,19 @@
     "avg_rec_epa": 1.1538
   },
   {
+    "player_id": "00-0037247",
+    "player_name": "G.Pickens",
+    "player_display_name": "George Pickens",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gnfxhtk8e6ecazbhoinl",
+    "total_ppr": 218.3,
+    "total_targets": 117,
+    "total_rec": 68,
+    "total_rec_yards": 1190,
+    "total_yac": 390,
+    "total_rec_tds": 5
+  },
+  {
     "player_id": "00-0039146",
     "player_name": "J.Reed",
     "player_display_name": "Jayden Reed",
@@ -401,34 +429,6 @@
     "total_yac": 327,
     "total_rec_tds": 3,
     "avg_rec_epa": -0.6153
-  },
-  {
-    "player_id": "00-0033921",
-    "player_name": "C.Godwin",
-    "player_display_name": "Chris Godwin",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfdampf12giyojipbcxl",
-    "total_ppr": 209.2,
-    "total_targets": 130,
-    "avg_target_share": 0.2392,
-    "total_rec": 83,
-    "total_rec_yards": 1024,
-    "total_yac": 376,
-    "total_rec_tds": 2,
-    "avg_rec_epa": 2.5883
-  },
-  {
-    "player_id": "00-0037247",
-    "player_name": "G.Pickens",
-    "player_display_name": "George Pickens",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gnfxhtk8e6ecazbhoinl",
-    "total_ppr": 208.8,
-    "total_targets": 106,
-    "total_rec": 63,
-    "total_rec_yards": 1140,
-    "total_yac": 388,
-    "total_rec_tds": 5
   },
   {
     "player_id": "00-0039064",
@@ -581,6 +581,21 @@
     "avg_rec_epa": 0.6532
   },
   {
+    "player_id": "00-0035216",
+    "player_name": "D.Johnson",
+    "player_display_name": "Diontae Johnson",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/imoqxbyoluisz2tmoral",
+    "total_ppr": 167.5,
+    "total_targets": 94,
+    "avg_target_share": 0.2319,
+    "total_rec": 55,
+    "total_rec_yards": 765,
+    "total_yac": 279,
+    "total_rec_tds": 6,
+    "avg_rec_epa": 1.819
+  },
+  {
     "player_id": "00-0038977",
     "player_name": "T.Dell",
     "player_display_name": "Tank Dell",
@@ -654,21 +669,6 @@
     "total_yac": 371,
     "total_rec_tds": 2,
     "avg_rec_epa": 1.5593
-  },
-  {
-    "player_id": "00-0035216",
-    "player_name": "D.Johnson",
-    "player_display_name": "Diontae Johnson",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/imoqxbyoluisz2tmoral",
-    "total_ppr": 152.7,
-    "total_targets": 87,
-    "avg_target_share": 0.2356,
-    "total_rec": 51,
-    "total_rec_yards": 717,
-    "total_yac": 261,
-    "total_rec_tds": 5,
-    "avg_rec_epa": 1.9983
   },
   {
     "player_id": "00-0035535",
@@ -836,6 +836,21 @@
     "avg_rec_epa": 2.044
   },
   {
+    "player_id": "00-0037261",
+    "player_name": "K.Shakir",
+    "player_display_name": "Khalil Shakir",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l1flqgo30hfowrdckdeu",
+    "total_ppr": 125.2,
+    "total_targets": 48,
+    "avg_target_share": 0.0891,
+    "total_rec": 42,
+    "total_rec_yards": 642,
+    "total_yac": 301,
+    "total_rec_tds": 3,
+    "avg_rec_epa": 2.7761
+  },
+  {
     "player_id": "00-0037741",
     "player_name": "J.Dotson",
     "player_display_name": "Jahan Dotson",
@@ -911,19 +926,19 @@
     "avg_rec_epa": 1.3889
   },
   {
-    "player_id": "00-0037261",
-    "player_name": "K.Shakir",
-    "player_display_name": "Khalil Shakir",
+    "player_id": "00-0039052",
+    "player_name": "T.Palmer",
+    "player_display_name": "Trey Palmer",
     "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l1flqgo30hfowrdckdeu",
-    "total_ppr": 113.1,
-    "total_targets": 45,
-    "avg_target_share": 0.0885,
-    "total_rec": 39,
-    "total_rec_yards": 611,
-    "total_yac": 282,
-    "total_rec_tds": 2,
-    "avg_rec_epa": 2.7594
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/avexbxgxqa9zpznbebxs",
+    "total_ppr": 109.2,
+    "total_targets": 70,
+    "avg_target_share": 0.1185,
+    "total_rec": 40,
+    "total_rec_yards": 441,
+    "total_yac": 153,
+    "total_rec_tds": 4,
+    "avg_rec_epa": -0.3039
   },
   {
     "player_id": "00-0031235",
@@ -1072,21 +1087,6 @@
     "total_yac": 141,
     "total_rec_tds": 4,
     "avg_rec_epa": 1.1169
-  },
-  {
-    "player_id": "00-0039052",
-    "player_name": "T.Palmer",
-    "player_display_name": "Trey Palmer",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/avexbxgxqa9zpznbebxs",
-    "total_ppr": 95.7,
-    "total_targets": 68,
-    "avg_target_share": 0.1221,
-    "total_rec": 39,
-    "total_rec_yards": 385,
-    "total_yac": 103,
-    "total_rec_tds": 3,
-    "avg_rec_epa": -0.489
   },
   {
     "player_id": "00-0037664",
@@ -1372,6 +1372,21 @@
     "avg_rec_epa": 1.2179
   },
   {
+    "player_id": "00-0031428",
+    "player_name": "A.Robinson",
+    "player_display_name": "Allen Robinson",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tucplhxtb3c626iekuzv",
+    "total_ppr": 65.2,
+    "total_targets": 52,
+    "avg_target_share": 0.1077,
+    "total_rec": 36,
+    "total_rec_yards": 292,
+    "total_yac": 81,
+    "total_rec_tds": 0,
+    "avg_rec_epa": -0.3675
+  },
+  {
     "player_id": "00-0035500",
     "player_name": "G.Dortch",
     "player_display_name": "Greg Dortch",
@@ -1430,21 +1445,6 @@
     "avg_rec_epa": 1.2308
   },
   {
-    "player_id": "00-0031428",
-    "player_name": "A.Robinson",
-    "player_display_name": "Allen Robinson",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tucplhxtb3c626iekuzv",
-    "total_ppr": 62,
-    "total_targets": 49,
-    "avg_target_share": 0.1096,
-    "total_rec": 34,
-    "total_rec_yards": 280,
-    "total_yac": 68,
-    "total_rec_tds": 0,
-    "avg_rec_epa": -0.3048
-  },
-  {
     "player_id": "00-0033857",
     "player_name": "J.Smith-Schuster",
     "player_display_name": "JuJu Smith-Schuster",
@@ -1488,6 +1488,19 @@
     "total_yac": 20,
     "total_rec_tds": 4,
     "avg_rec_epa": 2.3839
+  },
+  {
+    "player_id": "00-0037837",
+    "player_name": "C.Austin",
+    "player_display_name": "Calvin Austin",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qlt6ztqcbu0uzad6aavt",
+    "total_ppr": 60.4,
+    "total_targets": 32,
+    "total_rec": 18,
+    "total_rec_yards": 187,
+    "total_yac": 74,
+    "total_rec_tds": 2
   },
   {
     "player_id": "00-0038938",
@@ -1621,19 +1634,6 @@
     "total_rec_tds": 1
   },
   {
-    "player_id": "00-0037837",
-    "player_name": "C.Austin",
-    "player_display_name": "Calvin Austin",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qlt6ztqcbu0uzad6aavt",
-    "total_ppr": 52.7,
-    "total_targets": 30,
-    "total_rec": 17,
-    "total_rec_yards": 180,
-    "total_yac": 73,
-    "total_rec_tds": 1
-  },
-  {
     "player_id": "00-0036259",
     "player_name": "J.Jennings",
     "player_display_name": "Jauan Jennings",
@@ -1724,6 +1724,21 @@
     "avg_rec_epa": 1.291
   },
   {
+    "player_id": "00-0035215",
+    "player_name": "D.Harty",
+    "player_display_name": "Deonte Harty",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h72iki8fggkee1n2jpg6",
+    "total_ppr": 46.4,
+    "total_targets": 22,
+    "avg_target_share": 0.0515,
+    "total_rec": 16,
+    "total_rec_yards": 184,
+    "total_yac": 100,
+    "total_rec_tds": 1,
+    "avg_rec_epa": 0.6369
+  },
+  {
     "player_id": "00-0032543",
     "player_name": "A.Erickson",
     "player_display_name": "Alex Erickson",
@@ -1768,19 +1783,19 @@
     "avg_rec_epa": 1.0776
   },
   {
-    "player_id": "00-0035215",
-    "player_name": "D.Harty",
-    "player_display_name": "Deonte Harty",
+    "player_id": "00-0027944",
+    "player_name": "J.Jones",
+    "player_display_name": "Julio Jones",
     "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h72iki8fggkee1n2jpg6",
-    "total_ppr": 42,
-    "total_targets": 21,
-    "avg_target_share": 0.053,
-    "total_rec": 15,
-    "total_rec_yards": 150,
-    "total_yac": 79,
-    "total_rec_tds": 1,
-    "avg_rec_epa": 0.5155
+    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/omrddf2phtyztzx2nup1",
+    "total_ppr": 41.6,
+    "total_targets": 22,
+    "avg_target_share": 0.0821,
+    "total_rec": 14,
+    "total_rec_yards": 96,
+    "total_yac": 28,
+    "total_rec_tds": 3,
+    "avg_rec_epa": 0.3935
   },
   {
     "player_id": "00-0036415",
@@ -1841,6 +1856,36 @@
     "avg_rec_epa": -0.0835
   },
   {
+    "player_id": "00-0035208",
+    "player_name": "O.Zaccheaus",
+    "player_display_name": "Olamide Zaccheaus",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dwtubzfv9kpr23znavl6",
+    "total_ppr": 39.9,
+    "total_targets": 21,
+    "avg_target_share": 0.0563,
+    "total_rec": 11,
+    "total_rec_yards": 169,
+    "total_yac": 52,
+    "total_rec_tds": 2,
+    "avg_rec_epa": 0.9057
+  },
+  {
+    "player_id": "00-0036271",
+    "player_name": "Q.Watkins",
+    "player_display_name": "Quez Watkins",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lmulzdtlnoaldqrb2kit",
+    "total_ppr": 39.4,
+    "total_targets": 25,
+    "avg_target_share": 0.1236,
+    "total_rec": 18,
+    "total_rec_yards": 154,
+    "total_yac": 61,
+    "total_rec_tds": 1,
+    "avg_rec_epa": -0.7681
+  },
+  {
     "player_id": "00-0038606",
     "player_name": "P.Washington",
     "player_display_name": "Parker Washington",
@@ -1871,21 +1916,6 @@
     "avg_rec_epa": 0.9548
   },
   {
-    "player_id": "00-0035208",
-    "player_name": "O.Zaccheaus",
-    "player_display_name": "Olamide Zaccheaus",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dwtubzfv9kpr23znavl6",
-    "total_ppr": 38.4,
-    "total_targets": 20,
-    "avg_target_share": 0.0586,
-    "total_rec": 10,
-    "total_rec_yards": 164,
-    "total_yac": 52,
-    "total_rec_tds": 2,
-    "avg_rec_epa": 1.0084
-  },
-  {
     "player_id": "00-0031941",
     "player_name": "J.Crowder",
     "player_display_name": "Jamison Crowder",
@@ -1914,6 +1944,19 @@
     "total_rec_tds": 0
   },
   {
+    "player_id": "00-0037487",
+    "player_name": "D.Thompkins",
+    "player_display_name": "Deven Thompkins",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gt0yeyl9y8s6onw8wcdr",
+    "total_ppr": 37.3,
+    "total_targets": 26,
+    "total_rec": 18,
+    "total_rec_yards": 87,
+    "total_yac": 82,
+    "total_rec_tds": 1
+  },
+  {
     "player_id": "00-0034854",
     "player_name": "K.Hodge",
     "player_display_name": "KhaDarel Hodge",
@@ -1929,21 +1972,6 @@
     "avg_rec_epa": 0.4033
   },
   {
-    "player_id": "00-0027944",
-    "player_name": "J.Jones",
-    "player_display_name": "Julio Jones",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/omrddf2phtyztzx2nup1",
-    "total_ppr": 36.4,
-    "total_targets": 19,
-    "avg_target_share": 0.0807,
-    "total_rec": 11,
-    "total_rec_yards": 74,
-    "total_yac": 28,
-    "total_rec_tds": 3,
-    "avg_rec_epa": 0.2792
-  },
-  {
     "player_id": "00-0038941",
     "player_name": "T.Scott",
     "player_display_name": "Tyler Scott",
@@ -1957,19 +1985,19 @@
     "total_rec_tds": 0
   },
   {
-    "player_id": "00-0036271",
-    "player_name": "Q.Watkins",
-    "player_display_name": "Quez Watkins",
+    "player_id": "00-0033589",
+    "player_name": "D.Moore",
+    "player_display_name": "David Moore",
     "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lmulzdtlnoaldqrb2kit",
-    "total_ppr": 35.2,
-    "total_targets": 21,
-    "avg_target_share": 0.1234,
-    "total_rec": 15,
-    "total_rec_yards": 142,
-    "total_yac": 46,
-    "total_rec_tds": 1,
-    "avg_rec_epa": -0.663
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mysdmg1kkmxc6cywb1jh",
+    "total_ppr": 35,
+    "total_targets": 10,
+    "avg_target_share": 0.0455,
+    "total_rec": 7,
+    "total_rec_yards": 160,
+    "total_yac": 104,
+    "total_rec_tds": 2,
+    "avg_rec_epa": 1.3387
   },
   {
     "player_id": "00-0036626",
@@ -1982,19 +2010,6 @@
     "total_rec": 12,
     "total_rec_yards": 168,
     "total_yac": 76,
-    "total_rec_tds": 1
-  },
-  {
-    "player_id": "00-0037487",
-    "player_name": "D.Thompkins",
-    "player_display_name": "Deven Thompkins",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gt0yeyl9y8s6onw8wcdr",
-    "total_ppr": 34.9,
-    "total_targets": 25,
-    "total_rec": 17,
-    "total_rec_yards": 83,
-    "total_yac": 74,
     "total_rec_tds": 1
   },
   {
@@ -2359,21 +2374,6 @@
     "total_rec_yards": 82,
     "total_yac": 72,
     "total_rec_tds": 0
-  },
-  {
-    "player_id": "00-0033589",
-    "player_name": "D.Moore",
-    "player_display_name": "David Moore",
-    "position": "WR",
-    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mysdmg1kkmxc6cywb1jh",
-    "total_ppr": 20.4,
-    "total_targets": 7,
-    "avg_target_share": 0.0388,
-    "total_rec": 5,
-    "total_rec_yards": 94,
-    "total_yac": 62,
-    "total_rec_tds": 1,
-    "avg_rec_epa": 0.4629
   },
   {
     "player_id": "00-0036497",
@@ -3029,6 +3029,21 @@
     "total_yac": 0,
     "total_rec_tds": 0,
     "avg_rec_epa": -0.8744
+  },
+  {
+    "player_id": "00-0035527",
+    "player_name": "A.Isabella",
+    "player_display_name": "Andy Isabella",
+    "position": "WR",
+    "headshot_url": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s3repurenhwlyxci2sqy",
+    "total_ppr": 0,
+    "total_targets": 1,
+    "avg_target_share": 0.0333,
+    "total_rec": 0,
+    "total_rec_yards": 0,
+    "total_yac": 0,
+    "total_rec_tds": 0,
+    "avg_rec_epa": -0.429
   },
   {
     "player_id": "00-0035593",
