@@ -30,9 +30,9 @@ consistency_ratings_2023 <- player_stats_2023  %>%
   filter(season_type == "REG") %>%
   group_by(player_id, player_name, player_display_name, headshot_url) %>%
   summarize(
-    total_ppr = sum(fantasy_points_ppr),
+    total_ppr = sum(fantasy_points_ppr, na.rm = TRUE),
     ppr_ppg = (total_ppr / n()),
-    consistency_rtg = (sd(fantasy_points_ppr) / ppr_ppg)
+    consistency_rtg = (sd(fantasy_points_ppr, na.rm = TRUE) / ppr_ppg)
   ) %>%
   filter(total_ppr > 100) %>%
   arrange(consistency_rtg)
