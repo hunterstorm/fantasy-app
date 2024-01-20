@@ -60,8 +60,8 @@ qb_data_2023_json <-
 
 # Summarize QB data #####
 
-qb_leaders_2023 <- qb_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
+qb_leaders <- qb_data_2023 %>%
+  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_pass_yds = sum(passing_yards),
@@ -76,11 +76,6 @@ qb_leaders_2023 <- qb_data_2023 %>%
     total_rush_yds = sum(rushing_yards)
   ) %>%
   arrange(desc(total_ppr))
-
-qb_leaders_2023_json <-
-  jsonlite::toJSON(qb_leaders_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-write(qb_leaders_2023_json, file.path(json_folder, "qb_leaders_2023.json"))
 
 # Collect WR data #####
 
@@ -111,8 +106,8 @@ wr_data_2023_json <-
 
 # Summarize WR data #####
 
-wr_leaders_2023 <- wr_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
+wr_leaders <- wr_data_2023 %>%
+  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_targets = sum(targets),
@@ -124,11 +119,6 @@ wr_leaders_2023 <- wr_data_2023 %>%
     avg_rec_epa = mean(receiving_epa)
   ) %>%
   arrange(desc(total_ppr))
-
-wr_leaders_2023_json <-
-  jsonlite::toJSON(wr_leaders_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-write(wr_leaders_2023_json, file.path(json_folder, "wr_leaders_2023.json"))
 
 # Collect RB data #####
 
@@ -162,8 +152,8 @@ rb_data_2023_json <-
 
 # Summarize RB data #####
 
-rb_leaders_2023 <- rb_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
+rb_leaders <- rb_data_2023 %>%
+  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_carries = sum(carries),
@@ -180,11 +170,6 @@ rb_leaders_2023 <- rb_data_2023 %>%
     avg_rec_epa = mean(receiving_epa)
   ) %>%
   arrange(desc(total_ppr))
-
-rb_leaders_2023_json <-
-  jsonlite::toJSON(rb_leaders_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-write(rb_leaders_2023_json, file.path(json_folder, "rb_leaders_2023.json"))
 
 # Collect TE data #####
 
@@ -215,8 +200,8 @@ te_data_2023_json <-
 
 # Summarize TE data #####
 
-te_leaders_2023 <- te_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, headshot_url) %>%
+te_leaders <- te_data_2023 %>%
+  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr),
     total_targets = sum(targets),
@@ -229,7 +214,10 @@ te_leaders_2023 <- te_data_2023 %>%
   ) %>%
   arrange(desc(total_ppr))
 
-te_leaders_2023_json <-
-  jsonlite::toJSON(te_leaders_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-write(te_leaders_2023_json, file.path(json_folder, "te_leaders_2023.json"))
+# Convert each record to JSON and print on a new line
+cat(
+  jsonlite::toJSON(qb_leaders, pretty = FALSE),
+  jsonlite::toJSON(wr_leaders, pretty = FALSE),
+  jsonlite::toJSON(rb_leaders, pretty = FALSE),
+  jsonlite::toJSON(te_leaders, pretty = FALSE)
+)

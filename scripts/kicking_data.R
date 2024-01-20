@@ -58,8 +58,8 @@ k_data_2023 <- calculate_player_stats_kicking(pbp, weekly = TRUE) %>%
     pat_pct
   )
 
-k_leaders_2023 <- k_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, team, headshot_url) %>%
+k_leaders <- k_data_2023 %>%
+  group_by(player_id, player_name, player_display_name, position, team, headshot_url) %>%
   summarize(
     total_ppr = (
       (sum(fg_made_0_19, na.rm = TRUE)
@@ -83,7 +83,4 @@ k_leaders_2023 <- k_data_2023 %>%
   ) %>%
   arrange(desc(total_ppr))
 
-k_leaders_2023_json <-
-  jsonlite::toJSON(k_leaders_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-write(k_leaders_2023_json, file.path(json_folder, "k_leaders_2023.json"))
+cat(jsonlite::toJSON(k_leaders, pretty = FALSE))
