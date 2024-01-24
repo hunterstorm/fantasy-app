@@ -78,3 +78,5 @@ aws.s3::put_object(file = object_key,
                    object = object_key,
                    bucket = bucket_name,
                    content_type = "image/jpeg")
+
+file.remove(object_key)
