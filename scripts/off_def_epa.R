@@ -15,10 +15,8 @@ for (pkg in required_packages) {
   library(pkg, character.only = TRUE)
 }
 
-# Define config file path
-setwd("C:/Users/Hunter/Documents/projects/fantasy-app")
-config_file_path <- file.path("back-end", "config.json")
-
+# Define config file path relative to the working directory
+config_file_path <- file.path("..","back-end", "config.json")
 
 # Read JSON configuration
 config <- jsonlite::fromJSON(config_file_path)
