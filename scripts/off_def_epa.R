@@ -1,3 +1,4 @@
+# Remove existing image before reloading plot
 existing_file <- file.path(graphics_folder, "off_def_epa.jpeg")
 if (file.exists(existing_file)) {
   file.remove(existing_file)
