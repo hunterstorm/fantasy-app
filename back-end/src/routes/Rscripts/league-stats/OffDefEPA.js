@@ -16,20 +16,18 @@ const generateImage = async () => {
       } else {
         console.log('Script ran successfully');
         console.log('Script stdout:', stdout.toString());
-        resolve();
+        resolve(stdout.toString().trim());  // Resolve with the generated filename
       }
     });
   });
 };
 
-router.get('/', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     // Run the R script to generate the plot and save as an image
     await generateImage();
 
-    // Provide the static image URL as the response
-    const imageUrl = 'graphics/off_def_epa.jpeg';
-    res.json({ imageUrl });
+    res.json({ success: true, message: 'EPA image updated successfully' });
   } catch (error) {
     console.error('Error processing R script', error);
     res.status(500).json({ error: 'Internal Server Error' });
