@@ -1,35 +1,3 @@
-# Install and load required packages
-required_packages <- c("dplyr", "ggplot2", "ggrepel", "nflfastR", "nflplotR", "nflreadr", "tibble", "tidyr", "tidyverse", "jsonlite")
-
-# Install missing packages
-install_missing_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
-if (length(install_missing_packages) > 0) {
-  install.packages(install_missing_packages)
-}
-
-json_folder <- file.path(getwd(), "json-files", "position-data")
-
-if (!dir.exists(json_folder)) {
-  dir.create(json_folder)
-}
-
-# Load packages #####
-
-library(dplyr)
-library(ggplot2)
-library(ggrepel)
-library(nflfastR)
-library(nflplotR)
-library(nflreadr)
-library(tibble)
-library(tidyr)
-library(tidyverse)
-library(jsonlite)
-
-# Load most recent player stats #####
-
-player_stats_2023 <- load_player_stats(2023)
-
 # Collect QB data #####
 
 qb_data_2023 <- player_stats_2023 %>%

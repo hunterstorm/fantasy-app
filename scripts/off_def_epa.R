@@ -1,27 +1,7 @@
-# Install and load required packages
-required_packages <- c("dplyr", "ggplot2", "nflplotR", "nflreadr")
-
-# Install missing packages
-install_missing_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
-if (length(install_missing_packages) > 0) {
-  install.packages(install_missing_packages)
-}
-
-library(nflreadr)
-library(dplyr)
-library(ggplot2)
-library(nflplotR)
-
-graphics_folder <- file.path(getwd(), "graphics")
-
 existing_file <- file.path(graphics_folder, "off_def_epa.jpeg")
 if (file.exists(existing_file)) {
   file.remove(existing_file)
 }
-
-pbp <- load_pbp(2023) %>%
-  filter(season_type == "REG") %>%
-  filter(!is.na(posteam) & (rush == 1 | pass == 1))
 
 # offensive epa
 offense <- pbp %>%
