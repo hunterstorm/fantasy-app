@@ -26,13 +26,18 @@ qb_data_2023 <- player_stats_2023 %>%
 
 qb_data_2023_json <-
   jsonlite::toJSON(qb_data_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-# write(qb_data_2023_json, file = "qb_data_2023.json")
 
 # Summarize QB data #####
 
 qb_leaders <- qb_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
+  group_by(
+    player_id,
+    player_name,
+    player_display_name,
+    position,
+    recent_team,
+    headshot_url
+  ) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr, na.rm = TRUE),
     total_pass_yds = sum(passing_yards, na.rm = TRUE),
@@ -72,13 +77,18 @@ wr_data_2023 <- player_stats_2023 %>%
 
 wr_data_2023_json <-
   jsonlite::toJSON(wr_data_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-# write(wr_data_2023_json, file = "wr_data_2023.json")
 
 # Summarize WR data #####
 
 wr_leaders <- wr_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
+  group_by(
+    player_id,
+    player_name,
+    player_display_name,
+    position,
+    recent_team,
+    headshot_url
+  ) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr, na.rm = TRUE),
     total_targets = sum(targets, na.rm = TRUE),
@@ -118,13 +128,19 @@ rb_data_2023 <- player_stats_2023 %>%
 
 rb_data_2023_json <-
   jsonlite::toJSON(rb_data_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-# write(rb_data_2023_json, file = "rb_data_2023.json")
+
 
 # Summarize RB data #####
 
 rb_leaders <- rb_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
+  group_by(
+    player_id,
+    player_name,
+    player_display_name,
+    position,
+    recent_team,
+    headshot_url
+  ) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr, na.rm = TRUE),
     total_carries = sum(carries, na.rm = TRUE),
@@ -166,13 +182,18 @@ te_data_2023 <- player_stats_2023 %>%
 
 te_data_2023_json <-
   jsonlite::toJSON(te_data_2023, pretty = TRUE) # convert to JSON
-# write JSON to file in wd
-# write(te_data_2023_json, file = "te_data_2023.json")
 
 # Summarize TE data #####
 
 te_leaders <- te_data_2023 %>%
-  group_by(player_id, player_name, player_display_name, position, recent_team, headshot_url) %>%
+  group_by(
+    player_id,
+    player_name,
+    player_display_name,
+    position,
+    recent_team,
+    headshot_url
+  ) %>%
   summarize(
     total_ppr = sum(fantasy_points_ppr, na.rm = TRUE),
     total_targets = sum(targets, na.rm = TRUE),

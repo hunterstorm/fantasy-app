@@ -36,7 +36,14 @@ plot_data <- offense %>%
   scale_y_reverse()
 
 # Convert the plot to binary data
-jpeg_binary <- as.raw(ggsave(filename = object_key, plot = plot_data, device = "jpeg", width = 12, height = 7))
+jpeg_binary <-
+  as.raw(ggsave(
+    filename = object_key,
+    plot = plot_data,
+    device = "jpeg",
+    width = 12,
+    height = 7
+  ))
 
 # Upload the temporary file to S3
 aws.s3::put_object(
