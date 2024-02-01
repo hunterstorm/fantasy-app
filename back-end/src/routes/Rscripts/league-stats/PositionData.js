@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
         console.log(`Script output for ${commands[1]}:`, kickingScriptOutput);
 
         // Process script output for Kicker leaders
-        // await processKickingData(kickingScriptOutput);
+        await processKickingData(kickingScriptOutput);
 
         res.json({ success: true });
     } catch (error) {
@@ -90,21 +90,21 @@ async function processPositionData(scriptOutput) {
 
 
 
-// async function processKickingData(scriptOutput) {
-//     try {
-//         // Kicking data processing
-//         const jsonDataArray = JSON.parse(scriptOutput);
-//         await Promise.all(jsonDataArray.map(async (jsonData) => {
-//             if (jsonData && jsonData.player_id) {
-//                 await positions[4].upsert(jsonData, { updateOnDuplicate: ['player_id'] });
-//             } else {
-//                 console.error('Invalid JSON data:', jsonData);
-//             }
-//         }));
-//     } catch (jsonError) {
-//         console.error('Error processing kicking data JSON:', jsonError);
-//         console.error('Script Output:', scriptOutput);
-//     }
-// }
+async function processKickingData(scriptOutput) {
+    try {
+        // Kicking data processing
+        const jsonDataArray = JSON.parse(scriptOutput);
+        await Promise.all(jsonDataArray.map(async (jsonData) => {
+            if (jsonData && jsonData.player_id) {
+                await positions[4].upsert(jsonData, { updateOnDuplicate: ['player_id'] });
+            } else {
+                console.error('Invalid JSON data:', jsonData);
+            }
+        }));
+    } catch (jsonError) {
+        console.error('Error processing kicking data JSON:', jsonError);
+        console.error('Script Output:', scriptOutput);
+    }
+}
 
 module.exports = router;

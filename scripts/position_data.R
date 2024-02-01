@@ -1,3 +1,6 @@
+current_script <- "position_data.R"
+source("script_config.R", local = TRUE)
+
 # Collect QB data #####
 
 qb_data_2023 <- player_stats_2023 %>%

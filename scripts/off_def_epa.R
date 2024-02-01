@@ -1,3 +1,7 @@
+# config sourcing
+current_script <- "off_def_epa.R"
+source("script_config.R", local = TRUE)
+
 # CRAN mirror for aws package download
 chooseCRANmirror(graphics = FALSE, ind = 1)
 
@@ -18,7 +22,7 @@ plot_data <- offense %>%
   inner_join(defense, by = "team") %>%
   ggplot(aes(x = off_epa, y = def_epa)) +
   geom_abline(slope = -1.5, intercept = (4:-3) / 10, alpha = .2) +
-  geom_mean_lines(aes(v_var = off_epa, h_var = def_epa)) +
+  geom_mean_lines(aes(x0 = off_epa, y0 = def_epa)) +
   geom_nfl_logos(aes(team_abbr = team), width = 0.07, alpha = 0.7) +
   labs(
     x = "Offense EPA/play",
@@ -35,9 +39,11 @@ plot_data <- offense %>%
 jpeg_binary <- as.raw(ggsave(filename = object_key, plot = plot_data, device = "jpeg", width = 12, height = 7))
 
 # Upload the temporary file to S3
-aws.s3::put_object(file = object_key,
-                   object = object_key,
-                   bucket = bucket_name,
-                   content_type = "image/jpeg")
+aws.s3::put_object(
+  file = object_key,
+  object = object_key,
+  bucket = bucket_name,
+  content_type = "image/jpeg"
+)
 
 file.remove(object_key)
