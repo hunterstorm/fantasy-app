@@ -1,6 +1,6 @@
 # config sourcing
 current_script <- "off_def_epa.R"
-source("script_config.R", local = TRUE)
+source("config/script_config.R", local = TRUE)
 
 # CRAN mirror for aws package download
 chooseCRANmirror(graphics = FALSE, ind = 1)

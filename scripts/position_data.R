@@ -1,5 +1,5 @@
 current_script <- "position_data.R"
-source("script_config.R", local = TRUE)
+source("config/script_config.R", local = TRUE)
 
 # Collect QB data #####
 

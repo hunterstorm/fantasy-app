@@ -1,5 +1,5 @@
 current_script <- "kicking_data.R"
-source("script_config.R", local = TRUE)
+source("config/script_config.R", local = TRUE)
 
 k_data_2023 <- calculate_player_stats_kicking(pbp, weekly = TRUE) %>%
   filter(season_type == "REG") %>%
