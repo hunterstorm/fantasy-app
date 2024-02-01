@@ -19,12 +19,18 @@ szn_type <- "REG"
 
 # SOURCES #####
 
+# required packages and a function to execute install and load libaries
 source("config/packages.R", local = TRUE)
+
+#  functions that load data and set environments
 source("config/setup_functions.R", local = TRUE)
+
+# runs the functions sourced from above to load data
 source("config/data_processing.R", local = TRUE)
 
 # check if main script contains a dependency
 # dependent <- TRUE is written in a dependent script
 if (exists("dependent") && dependent) {
+    # locates the dependent script and performs a function
     source("config/dependencies.R", local = TRUE)
 }

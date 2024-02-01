@@ -1,5 +1,5 @@
-# load data function
-load_data <- function(szns, szn_type) {
+# load nflfastR pbp and player_stats datasets
+load_nfl_data <- function(szns, szn_type) {
     # Load player stats for the specified seasons and season type
     player_stats <- load_player_stats(szns) %>%
         filter(season_type == szn_type)
