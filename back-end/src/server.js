@@ -15,18 +15,24 @@ const ip = config.SERVER_IP
 
 //router variables
 const apiAuth = require('./routes/security/apiAuth')
-const ReceivingLeadersRoute = require('./routes/Rscripts/league-stats/ReceivingLeaders');
-const PositionDataRoute = require('./routes/Rscripts/league-stats/PositionData');
+const globalUpdateRoute = require('./routes/Rscripts/global-update/GlobalUpdate');
 const OffDefEPARoute = require('./routes/Rscripts/league-stats/OffDefEPA');
+
+const s3ImageRoute = require('./routes/access-points/s3Image');
+const positionDataRoute = require('./routes/access-points/positionData');
 
 //middleware
 app.use(cors());
 app.use(apiAuth);
 
 //Rscript routes
-app.use('/ReceivingLeaders', ReceivingLeadersRoute);
-app.use('/PositionData', PositionDataRoute);
+app.use('/GlobalUpdate', globalUpdateRoute);
 app.use('/OffDefEPA', OffDefEPARoute);
+
+
+//access point routes
+app.use('/Images', s3ImageRoute);
+app.use('/PositionData', positionDataRoute);
 
 
 //position_data models
