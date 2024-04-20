@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import config from '../config.json';
+import { axiosInstance } from '../utils'
 import { DataGrid } from '@mui/x-data-grid';
-
-let apiRoot = config.SERVER_ROOT;
-let apiKey = config.API_KEY;
 
 
 
@@ -47,73 +43,97 @@ const PositionTable = () => {
     pat_missed:'Total PAT missed'
   };
 
-  const [positionData, setPositionData] = useState([]);
+  const initialCacheState = {
+    qbs: { data: [], lastFetchTime: null, isDataCached: false },
+    wrs: { data: [], lastFetchTime: null, isDataCached: false },
+    rbs: { data: [], lastFetchTime: null, isDataCached: false },
+    tes: { data: [], lastFetchTime: null, isDataCached: false },
+    ks: { data: [], lastFetchTime: null, isDataCached: false },
+  };
+
+  const [positionData, setPositionData] = useState(initialCacheState);
   const [selectedPosition, setSelectedPosition] = useState('qbs');
   const [visibleColumns, setVisibleColumns] = useState([]);
-  
- 
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let response;
-        response = await axios.get(`${apiRoot}/PositionData/${selectedPosition}`, {
-          headers: {
-            'Content-Type': 'application/json',
-            'api-key': apiKey,
-            'Access-Control-Allow-Origin': '*',
-          },
-        });
-
-        const updatedData = response.data.map((item) =>
-          Object.fromEntries(
-            Object.entries(item).map(([key, value]) => [key, value === null ? 'n/a' : value])
-          )
-        );
-
-        const filteredData = updatedData.filter((item) =>
-          Object.values(item).some((value) =>
-            String(value).toLowerCase()
-          )
-        );
-
-        setPositionData(filteredData);
-
-        const columns = Object.keys(updatedData[0] || {}).map((key) => ({
-          field: key,
-          headerName: key === 'headshot_url' ? '' : displayNames[key] || key,
-          width: key === 'headshot_url' ? 100 : 150,
-          sortable: true,
-          renderCell: (params) => (
-            <div>
-              {key === 'headshot_url' ? (
-                params.value === null ? 'n/a' : (
-                  <img src={params.value} alt="headshot" style={{ width: 105, height: 85 }} />
-                )
-              ) : (
-                params.value === null ? 'n/a' : params.value
-              )}
-            </div>
-          ),
-        }));
-
-        const headshotColumnIndex = columns.findIndex((column) => column.field === 'headshot_url');
-        const reorderedColumns = [...columns];
-        reorderedColumns.unshift(reorderedColumns.splice(headshotColumnIndex, 1)[0]);
-
-        // Exclude 'player_id' & 'player_name' from visible columns
-        const newVisibleColumns = reorderedColumns.filter(
-          (column) => column.field !== 'player_id' && column.field !== 'player_name'
-        );
-
-        setVisibleColumns(newVisibleColumns);
+        let updatedData; // Declare updatedData
+  
+        const cacheKey = selectedPosition.toLowerCase();
+        const cache = positionData[cacheKey];
+  
+        // ... (rest of the code)
+  
+        if (!cache.lastFetchTime || !cache.isDataCached) {
+          const response = await axiosInstance.get(`/PositionData/${selectedPosition}`);
+  
+          // Process the response as before
+          updatedData = response.data.map((item) =>
+            Object.fromEntries(
+              Object.entries(item).map(([key, value]) => [key, value === null ? 'n/a' : value])
+            )
+          );
+  
+          const filteredData = updatedData.filter((item) =>
+            Object.values(item).some((value) =>
+              String(value).toLowerCase()
+            )
+          );
+  
+          setPositionData((prevData) => ({
+            ...prevData,
+            [cacheKey]: { data: filteredData, lastFetchTime: new Date(), isDataCached: true },
+          }));
+        } else {
+          const maxAgeInSeconds = 3600;
+          const currentTime = new Date().getTime();
+  
+          if (currentTime - cache.lastFetchTime > maxAgeInSeconds * 1000) {
+            setPositionData((prevData) => ({
+              ...prevData,
+              [cacheKey]: { ...cache, isDataCached: false },
+            }));
+          }
+        }
+  
+        if (updatedData) {
+          const columns = Object.keys(updatedData[0] || {}).map((key) => ({
+            field: key,
+            headerName: key === 'headshot_url' ? '' : displayNames[key] || key,
+            width: key === 'headshot_url' ? 100 : 150,
+            sortable: true,
+            renderCell: (params) => (
+              <div>
+                {key === 'headshot_url' ? (
+                  params.value === null ? 'n/a' : (
+                    <img src={params.value} alt="headshot" style={{ width: 105, height: 85 }} />
+                  )
+                ) : (
+                  params.value === null ? 'n/a' : params.value
+                )}
+              </div>
+            ),
+          }));
+  
+          const headshotColumnIndex = columns.findIndex((column) => column.field === 'headshot_url');
+          const reorderedColumns = [...columns];
+          reorderedColumns.unshift(reorderedColumns.splice(headshotColumnIndex, 1)[0]);
+  
+          // Exclude 'player_id' & 'player_name' from visible columns
+          const newVisibleColumns = reorderedColumns.filter(
+            (column) => column.field !== 'player_id' && column.field !== 'player_name'
+          );
+  
+          setVisibleColumns(newVisibleColumns);
+        }
       } catch (error) {
         console.error('Error fetching position data:', error);
       }
     };
-
+  
     fetchData();
-  }, [selectedPosition]);
+  }, [selectedPosition, positionData, displayNames]);
 
   const handlePositionChange = (event) => {
     setSelectedPosition(event.target.value);
@@ -135,16 +155,15 @@ const PositionTable = () => {
         </label>
       </div>
       <div style={{ height: 600, display: 'flex', alignSelf: 'center', backgroundColor: 'white', margin: 200 }}>
-        <DataGrid
-          rows={positionData}
-          columns={visibleColumns}
-          pageSize={5}
-          checkboxSelection
-          disableSelectionOnClick
-          getRowId={(row) => row.player_id}
-          sortingOrder={['desc', 'asc', null]}
-          
-        />
+      <DataGrid
+  rows={positionData[selectedPosition].data}
+  columns={visibleColumns}
+  pageSize={5}
+  checkboxSelection
+  disableSelectionOnClick
+  getRowId={(row) => row.player_id}
+  sortingOrder={['desc', 'asc', null]}
+/>
       </div>
     </div>
   );

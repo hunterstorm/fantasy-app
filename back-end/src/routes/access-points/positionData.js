@@ -33,7 +33,10 @@ router.get('/all', async(req,res)=>{
 router.get('/qbs', async (req, res) => {
     try {
         const qbs = await QBLeaders.findAll();
-        res.setHeader('Content-type', 'application/json');
+        res.set({
+            'Content-type': 'application/json',
+            'Cache-Control': 'public, max-age=3600'
+        });
         res.status(200).json(qbs);
     } catch (error) {
         console.error('Error fetching QBs', error);
@@ -45,7 +48,10 @@ router.get('/qbs', async (req, res) => {
 router.get('/wrs', async (req, res) => {
     try {
         const wrs = await WRLeaders.findAll();
-        res.setHeader('Content-type', 'application/json');
+        res.set({
+            'Content-type': 'application/json',
+            'Cache-Control': 'public, max-age=3600'
+        });
         res.status(200).json(wrs);
     } catch (error) {
         console.error('Error fetching WRs', error);
@@ -57,7 +63,10 @@ router.get('/wrs', async (req, res) => {
 router.get('/rbs', async (req, res) => {
     try {
         const rbs = await RBLeaders.findAll();
-        res.setHeader('Content-type', 'application/json');
+        res.set({
+            'Content-type': 'application/json',
+            'Cache-Control': 'public, max-age=3600'
+        });
         res.status(200).json(rbs);
     } catch (error) {
         console.error('Error fetching RBs', error);
@@ -69,7 +78,10 @@ router.get('/rbs', async (req, res) => {
 router.get('/tes', async (req, res) => {
     try {
         const tes = await TELeaders.findAll();
-        res.setHeader('Content-type', 'application/json');
+        res.set({
+            'Content-type': 'application/json',
+            'Cache-Control': 'public, max-age=3600'
+        });
         res.status(200).json(tes);
     } catch (error) {
         console.error('Error fetching RBs', error);
@@ -81,7 +93,10 @@ router.get('/tes', async (req, res) => {
 router.get('/ks', async (req, res) => {
     try {
         const ks = await KLeaders.findAll();
-        res.setHeader('Content-type', 'application/json');
+        res.set({
+            'Content-type': 'application/json',
+            'Cache-Control': 'public, max-age=3600'
+        });
         res.status(200).json(ks);
     } catch (error) {
         console.error('Error fetching Ks', error);

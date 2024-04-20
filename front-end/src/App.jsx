@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import DisplayReceivingYards from './components/DisplayReceivingYards';
 import PositionTable from './components/PositionTable'
+import './App.css'
 
 function App() {
   return (
@@ -11,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
