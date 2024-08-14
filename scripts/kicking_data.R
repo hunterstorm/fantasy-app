@@ -1,4 +1,5 @@
 current_script <- "kicking_data.R"
+szn <- 2023
 source("config/script_config.R", local = TRUE)
 
 k_data_2023 <- calculate_player_stats_kicking(pbp, weekly = TRUE) %>%

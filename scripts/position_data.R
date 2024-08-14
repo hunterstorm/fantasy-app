@@ -1,4 +1,5 @@
 current_script <- "position_data.R"
+szn <- 2023
 source("config/script_config.R", local = TRUE)
 
 # Collect QB data #####

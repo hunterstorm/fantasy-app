@@ -1,6 +1,7 @@
 # config sourcing
 current_script <- "off_def_epa.R"
 dependent <- TRUE
+szn <- 2023
 source("config/script_config.R", local = TRUE)
 
 # CRAN mirror for aws package download

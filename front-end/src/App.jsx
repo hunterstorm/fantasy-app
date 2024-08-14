@@ -1,11 +1,14 @@
-import PositionTable from './components/PositionTable'
+import PositionTable from './pages/Dashboard/components/PositionTable'
+import Routes from './Routes';
+import { ThemeProvider } from '@mui/material';
+import theme from './theme';
 import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <PositionTable/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Routes />
+    </ThemeProvider>
   );
 }
 

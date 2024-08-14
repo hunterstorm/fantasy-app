@@ -14,7 +14,7 @@ config <- jsonlite::fromJSON(config_file_path)
 bucket_name <- config$AWS_S3_BUCKET
 
 # define seasons
-szns <- 2023
+szns <- szn
 szn_type <- "REG"
 
 # SOURCES #####

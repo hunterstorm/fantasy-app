@@ -2,7 +2,7 @@
 required_packages <- c("dplyr", "ggplot2", "ggrepel", "nflfastR", "nflplotR", "nflreadr", "tibble", "tidyr", "tidyverse", "jsonlite")
 
 # Install missing packages
-install_missing_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
+install_missing_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
 if (length(install_missing_packages) > 0) {
   install.packages(install_missing_packages)
 }
@@ -26,7 +26,7 @@ library(tidyr)
 library(tidyverse)
 library(jsonlite)
 
-consistency_ratings_2023 <- player_stats_2023  %>%
+consistency_ratings_2023 <- player_stats_2023 %>%
   filter(season_type == "REG") %>%
   group_by(player_id, player_name, player_display_name, headshot_url) %>%
   summarize(
@@ -40,5 +40,7 @@ consistency_ratings_2023 <- player_stats_2023  %>%
 consistency_ratings_2023_json <-
   jsonlite::toJSON(consistency_ratings_2023, pretty = TRUE) # convert to JSON
 # write JSON to file in wd
-write(consistency_ratings_2023_json,
-      file.path(json_folder, "consistency_ratings_2023.json"))
+write(
+  consistency_ratings_2023_json,
+  file.path(json_folder, "consistency_ratings_2023.json")
+)

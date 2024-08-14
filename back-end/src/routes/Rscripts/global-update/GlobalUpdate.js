@@ -5,7 +5,7 @@ const { execSync } = require('child_process');
 const { processPositionData } = require('./positionDataProcessor');
 const { processKickingData } = require('./kickingDataProcessor');
 
-const commands = ['Rscript position_data.R', 'Rscript kicking_data.R', 'Rscript off_def_epa.R'];
+const commands = ['Rscript position_data.R', 'Rscript kicking_data.R', 'Rscript off_def_epa.R', 'Rscript consistency_ratings.R'];
 
 router.post('/', async (req, res) => {
     try {

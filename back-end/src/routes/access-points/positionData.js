@@ -5,7 +5,7 @@ const express = require('express');
 const router = express.Router();
 const { QBLeaders, WRLeaders, RBLeaders, TELeaders, KLeaders } = require('../../models/position-data/index');
 
-const positions = [QBLeaders, WRLeaders, RBLeaders, TELeaders, KLeaders]
+const positions = [QBLeaders, WRLeaders, RBLeaders, TELeaders, KLeaders];
 
 //functions
 
@@ -13,7 +13,9 @@ const positions = [QBLeaders, WRLeaders, RBLeaders, TELeaders, KLeaders]
 router.get('/all', async(req,res)=>{
 
     try {
-        const promises = positions.map(position => position.findAll());
+        const promises = positions.map(position => position.findAll({
+            order: [['total_ppr', 'DESC']]
+        }));
 
         const results = await Promise.all(promises);
 
@@ -32,7 +34,9 @@ router.get('/all', async(req,res)=>{
 // Get QBs
 router.get('/qbs', async (req, res) => {
     try {
-        const qbs = await QBLeaders.findAll();
+        const qbs = await QBLeaders.findAll({
+            order: [['total_ppr', 'DESC']]
+        });
         res.set({
             'Content-type': 'application/json',
             'Cache-Control': 'public, max-age=3600'
@@ -47,7 +51,9 @@ router.get('/qbs', async (req, res) => {
 //get WRs
 router.get('/wrs', async (req, res) => {
     try {
-        const wrs = await WRLeaders.findAll();
+        const wrs = await WRLeaders.findAll({
+            order: [['total_ppr', 'DESC']]
+        });
         res.set({
             'Content-type': 'application/json',
             'Cache-Control': 'public, max-age=3600'
@@ -62,7 +68,9 @@ router.get('/wrs', async (req, res) => {
 //get RBs
 router.get('/rbs', async (req, res) => {
     try {
-        const rbs = await RBLeaders.findAll();
+        const rbs = await RBLeaders.findAll({
+            order: [['total_ppr', 'DESC']]
+        });
         res.set({
             'Content-type': 'application/json',
             'Cache-Control': 'public, max-age=3600'
@@ -77,7 +85,9 @@ router.get('/rbs', async (req, res) => {
 //get TEs
 router.get('/tes', async (req, res) => {
     try {
-        const tes = await TELeaders.findAll();
+        const tes = await TELeaders.findAll({
+            order:[['total_ppr', 'DESC']]
+        });
         res.set({
             'Content-type': 'application/json',
             'Cache-Control': 'public, max-age=3600'
@@ -92,7 +102,9 @@ router.get('/tes', async (req, res) => {
 //get Ks
 router.get('/ks', async (req, res) => {
     try {
-        const ks = await KLeaders.findAll();
+        const ks = await KLeaders.findAll({
+            order:[['total_ppr', 'DESC']]
+        });
         res.set({
             'Content-type': 'application/json',
             'Cache-Control': 'public, max-age=3600'
