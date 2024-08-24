@@ -6,7 +6,7 @@ const drawerWidth = 380;
 export default function NavDrawer({open, toggleDrawer}) {
  
   const theme = useTheme();
-  const isMdDown = useMediaQuery(theme.breakpoints.down('md'));
+  const isMdDown = useMediaQuery(theme.breakpoints.down('lg'));
 
   return (
     <>

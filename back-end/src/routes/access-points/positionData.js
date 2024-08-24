@@ -31,6 +31,39 @@ router.get('/all', async(req,res)=>{
 
 })
 
+
+//getOne
+router.get('/position/:position/id/:id', async (req, res) => {
+    const { position, id } = req.params;
+
+    const modelMap= {
+        QB: QBLeaders,
+        WR: WRLeaders,
+        RB: RBLeaders,
+        TE: TELeaders,
+        K: KLeaders
+    }
+
+    const PositionModel = modelMap[position]
+
+    if(!PositionModel) {
+        return res.status(400).json({ error: 'Invalid position'});
+    }
+
+    try {
+        const player = await PositionModel.findByPk(id);
+
+        if(!player) {
+            return res.status(404)({error: "Player Not Found"});
+        }
+
+        res.status(200).json(player);
+    }catch (err) {
+        console.error(err);
+        res.status(500).json({error: "Internal Server Error"});
+    }
+})
+
 // Get QBs
 router.get('/qbs', async (req, res) => {
     try {

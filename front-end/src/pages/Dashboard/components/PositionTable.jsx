@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { axiosInstance } from '../../../utils';
 import { DataGrid } from '@mui/x-data-grid';
 import { Tabs, Tab, Box, Stack } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const PositionTable = () => {
   const displayNames = {
@@ -46,6 +47,9 @@ const PositionTable = () => {
   const [visibleColumns, setVisibleColumns] = useState([]);
   const [loading, setLoading] = useState(false);
 
+
+  const nav= useNavigate();
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -60,7 +64,7 @@ const PositionTable = () => {
 
         setPositionData(updatedData);
 
-        const columns = Object.keys(updatedData[0] || {}).map((key) => ({
+        const columns = Object.keys(updatedData[0] || {}).map((key) => ({ 
           field: key,
           headerName: key === 'headshot_url' ? '' : displayNames[key] || key,
           width: key === 'headshot_url' ? 105 : 150,
@@ -79,6 +83,7 @@ const PositionTable = () => {
             </Box>
           ),
         }));
+
 
         const headshotColumnIndex = columns.findIndex((column) => column.field === 'headshot_url');
         const reorderedColumns = [...columns];
@@ -100,6 +105,11 @@ const PositionTable = () => {
 
     fetchData();
   }, [selectedPosition]);
+
+  const handleNavigate = (id) => {
+      const selectedPlayer = positionData.find((player) => player.player_id === id )
+      nav(`players/${selectedPlayer.position}/${selectedPlayer.player_id}`)
+  }
 
   const handlePositionChange = (event, newValue) => {
     setSelectedPosition(newValue);
@@ -134,10 +144,17 @@ const PositionTable = () => {
       >
         <DataGrid
           rows={positionData}
-          columns={visibleColumns}
+          columns={visibleColumns.filter((column) => column.field !== 'headshot_url')}
           disableSelectionOnClick
           getRowId={(row) => row.player_id || row.player_display_name} // Ensure a unique ID
           loading={loading}
+          onRowClick={({row}) => handleNavigate(row.player_id) }
+          sx={{
+            ".MuiDataGrid-cell:focus": { outline: "none" },
+            "& .MuiDataGrid-row:hover": { cursor: "pointer" },
+            "& .MuiDataGrid-columnHeader:focus": { outline: "none" },
+            "& .MuiDataGrid-columnHeader:hover": { cursor: "default" },
+          }}
         />
       </Box>
     </Stack>

@@ -1,10 +1,11 @@
 import { useRoutes } from "react-router-dom";
 import { MainLayout } from './layouts';
-import { Dashboard } from "./pages";
+import { Dashboard, PlayerView } from "./pages";
 
 const Routes = () => {
     const links = [
-        {path:'/', element: <Dashboard />}
+        {path:'/', element: <Dashboard />},
+        {path:'/players/:position?/:id?', element: <PlayerView />}
     ]
 
     return useRoutes([
