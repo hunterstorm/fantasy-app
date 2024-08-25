@@ -18,7 +18,7 @@ function Page({ children }) {
                 </Helmet>
 
                 {!pageProps.hideBreadcrumbs && pathParts.length > 1 && (
-                        <Breadcrumbs sx={{ p: 2, pt: 22 }}>
+                        <Breadcrumbs sx={{ p: 2 }}>
                         {pathParts.map((path, index) => {
                             const pathTo = `/${pathParts.slice(0, index + 1).join('/')}`;
                             const isLast = index === pathParts.length - 1;

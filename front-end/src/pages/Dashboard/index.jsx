@@ -15,7 +15,7 @@ export default function Dashboard() {
   return (
 
     <Stack>
-        <Typography variant="h2" color="primary">
+        <Typography variant="h2" color="white">
             Dashboard
         </Typography>
         <Grid container alignItems="center" spacing={3}>

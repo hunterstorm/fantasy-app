@@ -1,10 +1,10 @@
 export default function getPalette() {
     const palette = {
         primary:{
-            main: "#1E90FF "
+            main: "#7E675E "
         },
         secondary: {
-            main: "#333333",
+            main: "#556B2F",
             light:"#E0E0E0"
         }
     }

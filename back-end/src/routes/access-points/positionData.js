@@ -45,10 +45,15 @@ router.get('/position/:position/id/:id', async (req, res) => {
     }
 
     const PositionModel = modelMap[position]
+    
+    const positionData = await PositionModel.findAll();
+    
 
     if(!PositionModel) {
         return res.status(400).json({ error: 'Invalid position'});
     }
+
+    const sortKeys = ["total_ppr", "total_rec_yards", "total_rec", "total_targets", "total_rec_tds", "total_yac", "avg_target_share", "avg_rec_epa", "total_carries", "total_rush_yds", "total_rush_tds", "avg_rush_epa", "total_rec_yds", "total_tds", "total_touches" ]
 
     try {
         const player = await PositionModel.findByPk(id);
@@ -57,7 +62,20 @@ router.get('/position/:position/id/:id', async (req, res) => {
             return res.status(404)({error: "Player Not Found"});
         }
 
-        res.status(200).json(player);
+        const rankings = {};
+        sortKeys.forEach((key) => {
+
+            // Create a copy of positionData to sort independently for each key
+            const sortedData = [...positionData].sort((a, b) => b[key] - a[key]);
+        
+            // Calculate the rank of the player based on the sorted data
+            const rank = sortedData.findIndex(p => p.player_id === player.player_id) + 1;
+            
+            rankings[key] = rank;
+        });
+
+
+        res.status(200).json({ player, rankings});
     }catch (err) {
         console.error(err);
         res.status(500).json({error: "Internal Server Error"});
@@ -72,7 +90,7 @@ router.get('/qbs', async (req, res) => {
         });
         res.set({
             'Content-type': 'application/json',
-            'Cache-Control': 'public, max-age=3600'
+            
         });
         res.status(200).json(qbs);
     } catch (error) {
@@ -89,7 +107,7 @@ router.get('/wrs', async (req, res) => {
         });
         res.set({
             'Content-type': 'application/json',
-            'Cache-Control': 'public, max-age=3600'
+            
         });
         res.status(200).json(wrs);
     } catch (error) {
@@ -106,7 +124,7 @@ router.get('/rbs', async (req, res) => {
         });
         res.set({
             'Content-type': 'application/json',
-            'Cache-Control': 'public, max-age=3600'
+            
         });
         res.status(200).json(rbs);
     } catch (error) {
@@ -123,7 +141,7 @@ router.get('/tes', async (req, res) => {
         });
         res.set({
             'Content-type': 'application/json',
-            'Cache-Control': 'public, max-age=3600'
+         
         });
         res.status(200).json(tes);
     } catch (error) {
@@ -140,7 +158,7 @@ router.get('/ks', async (req, res) => {
         });
         res.set({
             'Content-type': 'application/json',
-            'Cache-Control': 'public, max-age=3600'
+            // 'Cache-Control': 'public, max-age=3600'
         });
         res.status(200).json(ks);
     } catch (error) {

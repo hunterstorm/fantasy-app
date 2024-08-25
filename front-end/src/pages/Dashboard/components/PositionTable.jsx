@@ -117,14 +117,18 @@ const PositionTable = () => {
 
   return (
     <Stack spacing={2}>
-      <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
+      <Box sx={{ width: '100%', bgcolor: 'background.paper', borderRadius:7, display:'flex', justifyContent:'center' }}>
         <Tabs
           value={selectedPosition}
           onChange={handlePositionChange}
           centered
-          variant="fullWidth"
+          variant="scrollable"
           indicatorColor="primary"
           textColor="primary"
+          allowScrollButtonsMobile
+          scrollButtons="auto"
+        
+          sx={{p:3}}
         >
           <Tab label="Quarterbacks" value="qbs" />
           <Tab label="Wide Receivers" value="wrs" />
@@ -140,6 +144,7 @@ const PositionTable = () => {
           display: 'flex',
           alignSelf: 'center',
           backgroundColor: 'white',
+          borderRadius:10,
         }}
       >
         <DataGrid
@@ -154,6 +159,8 @@ const PositionTable = () => {
             "& .MuiDataGrid-row:hover": { cursor: "pointer" },
             "& .MuiDataGrid-columnHeader:focus": { outline: "none" },
             "& .MuiDataGrid-columnHeader:hover": { cursor: "default" },
+            borderRadius:10,
+            p:4
           }}
         />
       </Box>
