@@ -1,8 +1,10 @@
 import React from 'react'
-import { Box, Button, Stack, AppBar, Toolbar, Typography } from "@mui/material";
+import {  Button, Stack, AppBar, Toolbar, Typography } from "@mui/material";
 import { Menu } from '@mui/icons-material';
+import { useAuth } from '../../../providers/AuthProvider';
 
 export default function TopBar({ open, toggleDrawer }) {
+    const { signOut } = useAuth()
   return (
     
         <AppBar>
@@ -11,9 +13,9 @@ export default function TopBar({ open, toggleDrawer }) {
                     <Button icon onClick={toggleDrawer(true)} sx={{color:'white'}}>
                         <Menu />
                     </Button>
-                    <Typography py={2}>
-                        Sign in
-                    </Typography>
+                    <Button variant="contained" color="secondary" py={2} onClick={() => signOut()}>
+                        Sign Out
+                    </Button>
                 </Stack>
             </Toolbar>
         </AppBar>

@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
-import { MainLayout } from './layouts';
-import { Dashboard, PlayersView, PlayerView } from "./pages";
+import { MainLayout, AuthLayout } from './layouts';
+import { Dashboard, PlayersView, PlayerView, Login } from "./pages";
 
 const Routes = () => {
     const links = [
@@ -14,6 +14,16 @@ const Routes = () => {
             path: '/',
             element: <MainLayout />,
             children: links
+        },
+        {
+            path: '/',
+            element: <AuthLayout />,
+            children: [
+                {
+                    path:"/login",
+                    element: <Login />
+                }
+            ]
         }
     ])
 }

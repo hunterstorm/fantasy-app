@@ -5,15 +5,18 @@ import App from './App';
 
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { AuthProvider } from './providers/AuthProvider';
 import { PageProvider } from './providers/PageProvider';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HelmetProvider>
-    <BrowserRouter>
-      <PageProvider>
-        <App />
-      </PageProvider>
-    </BrowserRouter>
-  </HelmetProvider>
+  <AuthProvider>
+    <HelmetProvider>
+      <BrowserRouter>
+        <PageProvider>
+          <App />
+        </PageProvider>
+      </BrowserRouter>
+    </HelmetProvider>
+  </AuthProvider>
 );
