@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { axiosInstance } from '../../../utils';
+import { axiosInstance } from '../utils';
 import { DataGrid } from '@mui/x-data-grid';
 import { Tabs, Tab, Box, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import API from '../API';
 
 const PositionTable = () => {
   const displayNames = {
@@ -43,7 +44,7 @@ const PositionTable = () => {
   };
 
   const [positionData, setPositionData] = useState([]);
-  const [selectedPosition, setSelectedPosition] = useState('qbs');
+  const [selectedPosition, setSelectedPosition] = useState('QB');
   const [visibleColumns, setVisibleColumns] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -54,9 +55,10 @@ const PositionTable = () => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axiosInstance.get(`/PositionData/${selectedPosition}`);
 
-        const updatedData = response.data.map((item) =>
+        const query = { positions: selectedPosition}
+        const response = await API.players.getAll(query);
+        const updatedData = response.map((item) =>
           Object.fromEntries(
             Object.entries(item).map(([key, value]) => [key, value === null ? 'n/a' : value])
           )
@@ -108,7 +110,7 @@ const PositionTable = () => {
 
   const handleNavigate = (id) => {
       const selectedPlayer = positionData.find((player) => player.player_id === id )
-      nav(`players/${selectedPlayer.position}/${selectedPlayer.player_id}`)
+      nav(`/players/${selectedPlayer.position}/${selectedPlayer.player_id}`)
   }
 
   const handlePositionChange = (event, newValue) => {
@@ -117,26 +119,30 @@ const PositionTable = () => {
 
   return (
     <Stack spacing={2}>
-      <Box sx={{ width: '100%', bgcolor: 'background.paper', borderRadius:7, display:'flex', justifyContent:'center' }}>
-        <Tabs
-          value={selectedPosition}
-          onChange={handlePositionChange}
-          centered
-          variant="scrollable"
-          indicatorColor="primary"
-          textColor="primary"
-          allowScrollButtonsMobile
-          scrollButtons="auto"
-        
-          sx={{p:3}}
-        >
-          <Tab label="Quarterbacks" value="qbs" />
-          <Tab label="Wide Receivers" value="wrs" />
-          <Tab label="Runningbacks" value="rbs" />
-          <Tab label="Tight Ends" value="tes" />
-          <Tab label="Kickers" value="ks" />
-        </Tabs>
-      </Box>
+<Box sx={{ width: '100%', bgcolor: 'background.paper', borderRadius: 7}}>
+  <Tabs
+    value={selectedPosition}
+    onChange={handlePositionChange}
+    variant="scrollable"
+    indicatorColor="primary"
+    textColor="primary"
+    allowScrollButtonsMobile
+    scrollButtons="auto"
+    sx={{
+      maxWidth: '100%',
+      '& .MuiTabs-flexContainer': {
+        justifyContent: 'center',
+      },
+      p: 3,
+    }}
+  >
+    <Tab label="Quarterbacks" value="QB" />
+    <Tab label="Wide Receivers" value="WR" />
+    <Tab label="Runningbacks" value="RB" />
+    <Tab label="Tight Ends" value="TE" />
+    <Tab label="Kickers" value="K" />
+  </Tabs>
+</Box>
       <Box
         sx={{
           height: 600,

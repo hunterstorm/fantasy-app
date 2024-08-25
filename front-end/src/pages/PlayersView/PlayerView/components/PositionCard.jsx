@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Stack, Typography, Card, CardContent, Box, Divider } from '@mui/material';
-import { getOrdinalSuffix } from '../../../utils';
+import { getOrdinalSuffix } from '../../../../utils';
 
 const StatItem = ({ label, value, icon, rank }) => (
-  <Grid item xs={12} md={4} sx={{ display: 'flex', alignItems: 'center', minWidth: 300 }}>
+  <Grid item xs={12} md={3} sx={{ display: 'flex', alignItems: 'center',  minWidth: 200 }}>
     <Stack direction="row" spacing={2} alignItems="center">
       {icon && <Box>{icon}</Box>}
       <Box>
@@ -36,7 +36,7 @@ export default function PositionCard({sections}) {
               {section.title}
             </Typography>
             <Divider sx={{ mb: 2 }} />
-            <Grid container spacing={3} alignItems="center">
+            <Grid container spacing={3} alignItems="center" >
               {section.stats.map((stat, index) => (
                 <StatItem key={index} {...stat}/>
               ))}

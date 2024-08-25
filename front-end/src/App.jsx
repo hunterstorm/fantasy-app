@@ -1,4 +1,4 @@
-import PositionTable from './pages/Dashboard/components/PositionTable'
+
 import Routes from './Routes';
 import { ThemeProvider } from '@mui/material';
 import theme from './theme';

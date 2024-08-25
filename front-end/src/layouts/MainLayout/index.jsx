@@ -13,7 +13,7 @@ function MainLayout() {
   };
   return (
     <>
-    <Background />
+    {/* <Background /> */}
       <Box display="flex" height="100%" >
         <TopBar open={open} toggleDrawer={toggleDrawer} />
         <NavDrawer open={open} toggleDrawer={toggleDrawer} />

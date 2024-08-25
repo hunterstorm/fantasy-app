@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { PositionTable, OffDefEpa } from './components'
+import { OffDefEpa } from './components'
+import { PositionTable } from '../../components';
 import { Divider, Grid, Typography, Stack } from '@mui/material';
 import { usePageContext } from '../../providers/PageProvider';
 

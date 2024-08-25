@@ -1,11 +1,9 @@
 import {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
-import { axiosInstance } from '../../utils';
-import { Avatar, Box, Grid, Stack, Typography, CardHeader, Divider } from '@mui/material'
+import { Avatar, Box, Stack, Typography, CardHeader, Divider } from '@mui/material'
 import { PositionCard } from './components';
 import getPositionSections from './getPositionSections';
-
-
+import API from '../../../API';
 
 export default function PlayerView() {
   const [isLoading, setIsLoading] = useState(false);
@@ -14,7 +12,6 @@ export default function PlayerView() {
   const {player, rankings } = playerData; 
 
   const sections = getPositionSections(player, rankings)
-  console.log(sections)
 
   const { position, id } = useParams();
 
@@ -23,8 +20,8 @@ export default function PlayerView() {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const response = await axiosInstance.get(`/PositionData/position/${position}/id/${id}`);
-        setPlayerData(response.data)
+        const response = await API.players.getOne(position, id)
+        setPlayerData(response)
       } catch (err) {
         console.error(err)
       }finally {
@@ -52,7 +49,7 @@ export default function PlayerView() {
             <Typography color="grey" variant="h4">
             {player?.position}
             <Divider color='white' orientation="vertical" flexItem sx={{ mx: 2, display: 'inline-block', height: '0.75em'}} />
-            {player?.recent_team}
+            {player?.recent_team || player?.team}
           </Typography>
           }
         />
@@ -63,6 +60,7 @@ export default function PlayerView() {
         </Box>
         {(player?.position === "WR" || player?.position === "TE") && <PositionCard {...{playerData, sections: sections.wr}} />}
         {player?.position === "RB" && <PositionCard {...{playerData, sections: sections.rb}} />}
+        {player?.position === "QB" && <PositionCard {...{playerData, sections: sections.qb}} /> }
 
       </Stack>
     </Box>
