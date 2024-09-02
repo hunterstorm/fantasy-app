@@ -9,7 +9,8 @@ common_required_packages <- c(
     "tibble",
     "tidyr",
     "tidyverse",
-    "jsonlite"
+    "jsonlite",
+    "purrr"
 )
 
 # define s3 environment integration-specific packages
