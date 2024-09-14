@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import { OffDefEpa } from './components'
+// import { OffDefEpa } from './components'
 import { PositionTable } from '../../components';
-import { Divider, Grid, Typography, Stack } from '@mui/material';
+import { Divider, Grid2 as Grid, Typography, Stack } from '@mui/material';
 import { usePageContext } from '../../providers/PageProvider';
 
 export default function Dashboard() {
@@ -21,7 +21,7 @@ export default function Dashboard() {
         </Typography>
         <Grid container alignItems="center" spacing={3}>
             <Grid item xs={12}>
-                <Stack spacing={2}>
+                <Stack spacing={2} width="100%">
                     <Divider 
                         sx={{
                             color:'white',     
@@ -49,7 +49,7 @@ export default function Dashboard() {
                             Charts
                         </Typography>
                     </Divider>
-                    <OffDefEpa />
+                    {/* <OffDefEpa /> */}
                 </Stack>
             </Grid>
         </Grid>

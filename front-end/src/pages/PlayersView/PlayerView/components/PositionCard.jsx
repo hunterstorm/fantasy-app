@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Stack, Typography, Card, CardContent, Box, Divider } from '@mui/material';
+import { Stack, Typography, Card, CardContent, Box, Divider, Grid2 as Grid } from '@mui/material';
 import { getOrdinalSuffix } from '../../../../utils';
 
 const StatItem = ({ label, value, icon, rank }) => (

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { axiosInstance } from '../utils';
 import { DataGrid } from '@mui/x-data-grid';
 import { Tabs, Tab, Box, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import API from '../API';
+import { Skeleton } from '@mui/material';
 
 const PositionTable = () => {
   const displayNames = {
@@ -116,33 +116,34 @@ const PositionTable = () => {
   const handlePositionChange = (event, newValue) => {
     setSelectedPosition(newValue);
   };
+  
 
   return (
     <Stack spacing={2}>
-<Box sx={{ width: '100%', bgcolor: 'background.paper', borderRadius: 7}}>
-  <Tabs
-    value={selectedPosition}
-    onChange={handlePositionChange}
-    variant="scrollable"
-    indicatorColor="primary"
-    textColor="primary"
-    allowScrollButtonsMobile
-    scrollButtons="auto"
-    sx={{
-      maxWidth: '100%',
-      '& .MuiTabs-flexContainer': {
-        justifyContent: 'center',
-      },
-      p: 3,
-    }}
-  >
-    <Tab label="Quarterbacks" value="QB" />
-    <Tab label="Wide Receivers" value="WR" />
-    <Tab label="Runningbacks" value="RB" />
-    <Tab label="Tight Ends" value="TE" />
-    <Tab label="Kickers" value="K" />
-  </Tabs>
-</Box>
+      <Box sx={{ width: '100%', bgcolor: 'background.paper', borderRadius: 7}}>
+        <Tabs
+          value={selectedPosition}
+          onChange={handlePositionChange}
+          variant="scrollable"
+          indicatorColor="primary"
+          textColor="primary"
+          allowScrollButtonsMobile
+          scrollButtons="auto"
+          sx={{
+            maxWidth: '100%',
+            '& .MuiTabs-flexContainer': {
+              justifyContent: 'center',
+            },
+            p: 3,
+          }}
+        >
+          <Tab label="Quarterbacks" value="QB" />
+          <Tab label="Wide Receivers" value="WR" />
+          <Tab label="Runningbacks" value="RB" />
+          <Tab label="Tight Ends" value="TE" />
+          <Tab label="Kickers" value="K" />
+        </Tabs>
+      </Box>
       <Box
         sx={{
           height: 600,

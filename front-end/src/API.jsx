@@ -9,6 +9,15 @@ export default class API {
         },
         getOne: (pos, id) => req.get(`/PositionData/position/${pos}/id/${id}`)
     }
+    static teams = {
+        getAll: (query) => {
+            const sp = new URLSearchParams(query);
+            return req.get(`/Teams/all?${sp.toString()}`);
+        },
+        getLeaders: () => {
+            return req.get('/Teams/leaders')
+        }
+    }
 }
 
 function request(method = "GET") {

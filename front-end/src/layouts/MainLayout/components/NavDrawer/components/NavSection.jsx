@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, List, ListItem, ListItemText, ListItemIcon, Typography, Stack} from '@mui/material';
-import { SportsFootball, Person } from '@mui/icons-material';
+import { SportsFootball, Person, Groups } from '@mui/icons-material';
 import { NavLink as RouterLink, useLocation} from 'react-router-dom';
 
 function NavItem({ item, active, onNavigate }) {
@@ -38,6 +38,11 @@ export default function NavSection({onClose}) {
             title: "Players",
             path: "/players",
             icon: Person
+        },
+        {
+            title: "Teams",
+            path: "/teams",
+            icon: Groups
         }
     ]
 

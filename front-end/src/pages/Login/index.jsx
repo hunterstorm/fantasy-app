@@ -1,7 +1,8 @@
 
 import * as Yup from "yup";
 import { Formik } from "formik";
-import { Box, Button, Card, CardContent, CardHeader, Container, TextField, Typography } from "@mui/material";
+import { Box, Button, Card, CardContent, CardHeader, Container, TextField, Stack, Typography } from "@mui/material";
+import { LoadingButton } from '@mui/lab'
 import { useAuth } from "../../providers/AuthProvider";
 import { Helmet } from 'react-helmet-async';
 
@@ -26,7 +27,7 @@ function LoginPage() {
 				<title>Login | SavedBy Admin</title>
 			</Helmet>
 			<Box sx={{ display: "flex", flexDirection: "column", height: "100vh", justifyContent: "center" }}>
-				<Container maxWidth="xs">
+				<Container maxWidth="sm">
 					<Card sx={{borderRadius: 5}}>
 						<CardContent>
 							<Formik
@@ -42,48 +43,77 @@ function LoginPage() {
 										<Box sx={{ mb: 3 }}>
 											<CardHeader
 												title={
-													<Typography variant="h2">
+													<Typography color="primary" variant="h2" sx={{fontFamily:'"Rowdies", sans-serif'}}>
 														Fantasy Bros
 													</Typography>
 												}	
 												subheader={
-													<Typography color="textPrimary" variant="h5">
-													Sign in
+													<Stack>
+
+													<Typography color="secondary" variant="h5">
+													Tired of losing? Become a Fantasy Bro and simply gatekeep it from your league mates.
 												</Typography>
+												<Typography color="secondary" variant="body2">
+													We actually recommend that you do not gatekeep us because we want everyone to enjoy our app.  Iron sharpens iron!  Plus it's FREE to sign up!
+												</Typography>
+													</Stack>
 												}
 											/>
 										</Box>
-										<TextField
-											error={Boolean(touched.email && errors.email)}
-											fullWidth
-											helperText={touched.email && errors.email}
-											label="Email Address"
-											margin="normal"
-											name="email"
-											onBlur={handleBlur}
-											onChange={handleChange}
-											type="email"
-											value={values.email}
-											variant="outlined"
-											/>
-										<TextField
-											error={Boolean(touched.password && errors.password)}
-											fullWidth
-											helperText={touched.password && errors.password}
-											label="Password"
-											margin="normal"
-											name="password"
-											onBlur={handleBlur}
-											onChange={handleChange}
-											type="password"
-											value={values.password}
-											variant="outlined"
-											/>
-										<Box sx={{ py: 2 }}>
-											<Button color="primary" disabled={!!isSubmitting} fullWidth size="large" type="submit" variant="contained">
-												Sign in
-											</Button>
-										</Box>
+										<Stack px={{xs: 2, md: 12}}>
+											{/* <TextField
+												error={Boolean(touched.username && errors.username)}
+												fullWidth
+												helperText={touched.username && errors.username}
+												label="Username"
+												margin="normal"
+												name="email"
+												onBlur={handleBlur}
+												onChange={handleChange}
+												type="email"
+												value={values.email}
+												variant="outlined"
+												/> */}
+											<TextField
+												error={Boolean(touched.email && errors.email)}
+												fullWidth
+												helperText={touched.email && errors.email}
+												label="Email Address"
+												margin="normal"
+												name="email"
+												onBlur={handleBlur}
+												onChange={handleChange}
+												type="email"
+												value={values.email}
+												variant="outlined"
+												/>
+											<TextField
+												error={Boolean(touched.password && errors.password)}
+												fullWidth
+												helperText={touched.password && errors.password}
+												label="Password"
+												margin="normal"
+												name="password"
+												onBlur={handleBlur}
+												onChange={handleChange}
+												type="password"
+												value={values.password}
+												variant="outlined"
+												/>
+											<Box sx={{ py: 2 }}>
+												<Button color="primary" disabled={!!isSubmitting} fullWidth size="large" variant="contained">
+													Sign Up!
+												</Button>
+												<Stack direction="row" justifyContent="flex-end" alignItems="center" spacing={1} pt={1}>
+													<Typography sx={{pb:0.3}}>
+														Already have an account?
+													</Typography>
+													<LoadingButton variant="text" type="submit" loading={!!isSubmitting} sx={{textTransform:'none'}} >
+														Login
+													</LoadingButton>
+												</Stack>
+											</Box>											
+										</Stack>
 									</form>
 								)}
 							</Formik>

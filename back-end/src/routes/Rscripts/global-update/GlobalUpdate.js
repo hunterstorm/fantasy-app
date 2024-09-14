@@ -4,8 +4,9 @@ const { execSync } = require('child_process');
 
 const { processPositionData } = require('./positionDataProcessor');
 const { processKickingData } = require('./kickingDataProcessor');
+const { processTeamData } = require('./teamDataProcesor');
 
-const commands = ['Rscript position_data.R', 'Rscript kicking_data.R', 'Rscript off_def_epa.R', 'Rscript consistency_ratings.R'];
+const commands = ['Rscript position_data.R 2024', 'Rscript kicking_data.R 2024'];
 
 router.post('/', async (req, res) => {
     try {
@@ -22,12 +23,15 @@ router.post('/', async (req, res) => {
 
         for (const output of outputs) {
             const { command, scriptOutput } = output;
-            if (command === 'Rscript position_data.R') {
+            if (command === 'Rscript position_data.R 2024') {
                 await processPositionData(scriptOutput);
                 console.log(`Position data processed successfully for ${command}`);
-            } else if (command === 'Rscript kicking_data.R') {
+            } else if (command === 'Rscript kicking_data.R ') {
                 await processKickingData(scriptOutput);
                 console.log(`Kicking data processed successfully for ${command}`);
+            }
+            else if(command==="Rscript team_stats.R"){
+                await processTeamData(scriptOutput);
             } else {
                 console.log(`Unhandled command: ${command}`);
             }

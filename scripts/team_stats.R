@@ -47,4 +47,6 @@ team_stats <- off_run_pass_ratio %>%
   full_join(team_stats, by = "posteam")
 
 # clean up N/A values for posteam
-team_stats <- team_stats[complete.cases(team_stats[ , "posteam"]), ]
+team_stats <- team_stats[complete.cases(team_stats[, "posteam"]), ]
+
+cat(jsonlite::toJSON(team_stats, pretty = FALSE))

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Avatar, Box, Stack, Typography, CardHeader, Divider } from '@mui/material'
 import { PositionCard, ViewSkel } from './components';
 import getPositionSections from './getPositionSections';
+import { usePageContext } from '../../../providers/PageProvider';
 import API from '../../../API';
 
 export default function PlayerView() {
@@ -14,6 +15,14 @@ export default function PlayerView() {
   const sections = getPositionSections(player, rankings)
 
   const { position, id } = useParams();
+
+  const { setPageProps } = usePageContext();
+
+  const title = player?.player_display_name || "Player";
+
+  useEffect(() => {
+      setPageProps({ title: title })
+  },[setPageProps, title])
 
   useEffect(() => {
 

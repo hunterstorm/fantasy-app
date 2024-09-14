@@ -7,11 +7,11 @@ const password = config.DB_PASSWORD
 const dbName = config.DB_NAME
 const port = config.DB_PORT
 
-const positionDataSchemaConnection = new Sequelize(`postgres://${username}:${password}@${server}:${port}/${dbName}`, {
+const teamDataSchemaConnection = new Sequelize(`postgres://${username}:${password}@${server}:${port}/${dbName}`, {
     define: {
         timestamps: false,
-        schema: 'positional_data'
+        schema: 'team_data'
     }
 });
 
-module.exports = positionDataSchemaConnection
+module.exports = teamDataSchemaConnection

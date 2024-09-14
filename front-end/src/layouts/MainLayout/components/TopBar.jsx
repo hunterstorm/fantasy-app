@@ -1,6 +1,6 @@
 import React from 'react'
 import {  Button, Stack, AppBar, Toolbar, Typography } from "@mui/material";
-import { Menu } from '@mui/icons-material';
+import { Menu, ArrowDropDown } from '@mui/icons-material';
 import { useAuth } from '../../../providers/AuthProvider';
 
 export default function TopBar({ open, toggleDrawer }) {
@@ -13,11 +13,17 @@ export default function TopBar({ open, toggleDrawer }) {
                     <Button icon onClick={toggleDrawer(true)} sx={{color:'white'}}>
                         <Menu />
                     </Button>
-                    <Button variant="contained" color="secondary" py={2} onClick={() => signOut()}>
-                        Sign Out
-                    </Button>
+                    <Stack direction="row" spacing={2} alignItems="center">
+                        <Stack direction="row">
+                            <Typography>2023</Typography>
+                            <ArrowDropDown />
+                        </Stack>
+                        <Button variant="contained" color="secondary" py={2} onClick={() => signOut()}>
+                            Sign Out
+                        </Button>
+                    </Stack>
                 </Stack>
             </Toolbar>
         </AppBar>
-  )
+    )
 }
