@@ -80,6 +80,10 @@ wr_data_2023 <- player_stats_2023 %>%
     receiving_tds,
     target_share,
     receiving_epa,
+    carries,
+    rushing_yards,
+    rushing_tds,
+    rushing_epa,
     fantasy_points_ppr
   )
 
@@ -105,7 +109,12 @@ wr_leaders <- wr_data_2023 %>%
     total_rec_yards = sum(receiving_yards, na.rm = TRUE),
     total_yac = sum(receiving_yards_after_catch, na.rm = TRUE),
     total_rec_tds = sum(receiving_tds, na.rm = TRUE),
-    avg_rec_epa = mean(receiving_epa, na.rm = TRUE)
+    total_carries = sum(carries, na.rm = TRUE),
+    total_rush_yds = sum(rushing_yards, na.rm = TRUE),
+    total_rush_tds = sum(rushing_tds, na.rm = TRUE),
+    total_touches = (total_carries + total_rec),
+    avg_rec_epa = mean(receiving_epa, na.rm = TRUE),
+    avg_rush_epa = mean(rushing_epa, na.rm = TRUE)
   ) %>%
   arrange(desc(total_ppr))
 
